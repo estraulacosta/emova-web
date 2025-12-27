@@ -1,0 +1,7 @@
+<svg width="900" height="700" viewBox="0 0 900 700" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Bowl shape: Flat top, curved bottom -->
+  <path d="M0 0 L900 0 C900 550 0 550 0 0 Z" fill="#FFFFFF"/>
+  
+  <!-- Tail -->
+  <path d="M23.4443 205.253C32.8287 154.789 68.2943 123.96 84.8541 114.853L45.4381 -7.42078e-05C-24.5345 77.4197 1.6203 169.094 23.4443 205.253Z" fill="#FFFFFF" transform="translate(180, 400) rotate(10)"/>
+</svg>

@@ -51,7 +51,7 @@ export default function Footer() {
             <div className="md:min-w-[140px]">
               <h4 className="font-playfair font-bold mb-2 text-lg">Servicios</h4>
               <ul className="space-y-1 text-white/90">
-                <li><a href="#metodo" className="hover:underline">Métodos</a></li>
+                <li><a href="/metodo" className="hover:underline">Métodos</a></li>
                 <li><a href="#evidencia" className="hover:underline">Evidencia</a></li>
                 <li><a href="#diagnostico" className="hover:underline">Diagnóstico</a></li>
               </ul>

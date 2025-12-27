@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import { usePathname } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
@@ -9,33 +10,42 @@ import { Menu, X } from "lucide-react";
 const navLinks = [
   { name: "Nosotros", href: "#nosotros" },
   { name: "Evidencia", href: "#evidencia" },
-  { name: "Método", href: "#metodo" },
+  { name: "Método", href: "/metodo" },
   { name: "Diagnóstico", href: "#diagnostico" },
 ];
 
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const pathname = usePathname();
+
+
+  // Forzar fondo blanco semitransparente y sombra en /metodo igual que al hacer scroll
+  const isMetodo = pathname === "/metodo";
 
   useEffect(() => {
+    if (isMetodo) {
+      setIsScrolled(true);
+      return;
+    }
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 50);
     };
     handleScroll();
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  }, [isMetodo]);
 
   return (
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled ? "bg-white/90 backdrop-blur-md shadow-md py-4" : "bg-transparent py-8"
+        isMetodo ? "bg-[#B9C85E]/90 backdrop-blur-md py-4" : isScrolled ? "bg-white/90 backdrop-blur-md shadow-md py-4" : "bg-transparent py-8"
       }`}
     >
       <div className="container mx-auto px-6 flex items-center justify-between">
         <Link href="/" className="relative w-72 h-24">
           <Image
-            src={isScrolled ? "/assets/Logo.svg" : "/assets/logo_blanco.svg"}
+            src={isMetodo ? "/assets/logo_blanco.svg" : isScrolled ? "/assets/Logo.svg" : "/assets/logo_blanco.svg"}
             alt="EMOVA"
             fill
             className="object-contain object-left"
@@ -49,9 +59,11 @@ export default function Navbar() {
               key={link.name}
               href={link.href}
               className={`transition-colors font-medium font-noto ${
-                isScrolled
-                  ? "text-emova-grey hover:text-emova-primary"
-                  : "text-white hover:text-white/80"
+                isMetodo
+                  ? "text-white hover:text-[#9FB350]"
+                  : isScrolled
+                    ? "text-emova-grey hover:text-emova-primary"
+                    : "text-white hover:text-white/80"
               }`}
             >
               {link.name}
@@ -59,7 +71,11 @@ export default function Navbar() {
           ))}
           <Link
             href="#contacto"
-            className="bg-emova-primary text-white px-6 py-2 rounded-full font-semibold hover:bg-emova-secondary transition-colors font-noto"
+            className={`px-6 py-2 rounded-full font-semibold transition-colors font-noto ${
+              isMetodo
+                ? "bg-[#9FB350] text-white hover:bg-white hover:text-[#9FB350]"
+                : "bg-emova-primary text-white hover:bg-emova-secondary"
+            }`}
           >
             Contáctanos
           </Link>

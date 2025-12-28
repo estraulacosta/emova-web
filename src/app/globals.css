@@ -1,3 +1,4 @@
+
 @import "tailwindcss";
 
 @theme {
@@ -11,16 +12,19 @@
   --font-noto: var(--font-noto);
 }
 
+
 :root {
   --background: #ffffff;
   --foreground: #575756;
 }
 
 body {
+  overflow-x: hidden;
   background: var(--background);
   color: var(--foreground);
   font-family: var(--font-noto), sans-serif;
 }
+
 
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-playfair), serif;

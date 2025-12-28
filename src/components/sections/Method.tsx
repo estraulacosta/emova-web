@@ -1,11 +1,44 @@
+
+"use client";
+import { motion } from "framer-motion";
 import Image from "next/image";
 
 export default function Method() {
   return (
-    <section className="relative flex flex-col items-center justify-center min-h-[700px] bg-white">
+    <>
+      {/* Header animado */}
+      <motion.div
+        initial={{ y: -80 }}
+        animate={{ y: 0 }}
+        transition={{ duration: 0.8, ease: 'easeOut', delay: 0.8 }}
+        className="w-full bg-[#B9C85E] flex justify-center items-center"
+        style={{height: '220px', marginTop: '48px', zIndex: 10, position: 'relative'}}
+      >
+        <motion.h1
+          initial={false}
+          animate={{ y: 0 }}
+          transition={{ duration: 0.8, ease: 'easeOut', delay: 0.8 }}
+          className="text-base sm:text-xl md:text-6xl font-playfair font-bold text-white text-center"
+        >
+          Método
+        </motion.h1>
+      </motion.div>
+      <div className="relative flex flex-col items-center justify-center min-h-[700px] bg-white">
       {/* SVG gráfico principal */}
       <div className="relative w-full flex justify-center items-center z-10" style={{ minHeight: 600, marginTop: '20px' }}>
-        <svg width="966" height="795" viewBox="0 0 966 795" fill="none" xmlns="http://www.w3.org/2000/svg" className="max-w-[80vw] md:max-w-[850px] w-full h-auto" style={{ transform: 'translateX(-25px)' }}>
+        <motion.div className="translate-x-[-25px]"
+          initial={{ scale: 0 }}
+          animate={{ scale: 1 }}
+          transition={{ duration: 0.8, ease: 'easeOut' }}
+        >
+          <motion.svg
+            width="966"
+            height="795"
+            viewBox="0 0 966 795"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            className="max-w-[80vw] md:max-w-[850px] w-full h-auto"
+          >
           <g clipPath="url(#clip0_105_7205)">
             <path d="M965.41 393.12C964.22 267.26 911.64 153.69 827.63 72.39L506.9 393.12L832.03 718.25C914.42 636.32 965.43 522.86 965.43 397.48C965.43 396.03 965.42 394.58 965.4 393.12H965.41Z" stroke="#B9C85E" strokeWidth="2" strokeMiterlimit="10"/>
             <path d="M149.71 35.92C58.43 127.66 1.66 253.76 0.5 393.12H506.9L149.71 35.92Z" stroke="#B9C85E" strokeWidth="2" strokeMiterlimit="10"/>
@@ -21,36 +54,56 @@ export default function Method() {
               <rect width="965.94" height="794.94" fill="white"/>
             </clipPath>
           </defs>
-        </svg>
-        {/* Contenido centrado dentro del gráfico */}
-        <div className="absolute top-1/2 left-1/2 z-20 flex flex-col items-center justify-center" style={{transform: 'translate(-50%, -50%)', maxWidth: '420px'}}>
+          </motion.svg>
+        </motion.div>
+        <motion.div
+          className="absolute inset-0 flex flex-col items-center justify-center z-20"
+          style={{ maxWidth: '420px', margin: '0 auto' }}
+          initial={{ scale: 0 }}
+          animate={{ scale: 1 }}
+          transition={{ duration: 0.8, ease: 'easeOut' }}
+        >
           <h2 className="text-3xl md:text-4xl font-playfair font-bold text-[#7A7A7A] text-center mb-2">Modelo de<br/>transformación <span className="text-[#9FB350]">neuroemocional™</span></h2>
           <p className="text-base md:text-lg text-emova-grey/80 text-center font-noto mb-2">El único método que garantiza<br/>cambios neurológicos reales y medibles</p>
-        </div>
+        </motion.div>
       </div>
       {/* Manos decorativas posicionadas como el prototipo azul */}
-      {/* Mano izquierda: ajustada y rotada para que los dedos toquen el extremo superior izquierdo del gráfico */}
-      <Image
-        src="/assets/Mano%20C.png"
-        alt="Mano C"
-        width={700}
-        height={700}
-        className="absolute left-[-200px] top-[-40px] md:left-[-320px] md:top-[-80px] w-[420px] md:w-[700px] pointer-events-none select-none"
-        style={{ zIndex: 50, transform: 'scaleX(-1) rotate(-18deg)' }}
-      />
+      <motion.div
+        initial={{ x: '-100vw' }}
+        animate={{ x: 0 }}
+        transition={{ duration: 0.9, ease: 'easeOut', delay: 0.8 }}
+        className="absolute left-[220px] top-[-90px] md:left-[-70px] md:top-[-130px] w-[420px] md:w-[700px] pointer-events-none select-none"
+        style={{ zIndex: 50 }}
+      >
+        <Image
+          src="/assets/Mano%20C.png"
+          alt="Mano C"
+          width={1000}
+          height={1000}
+          style={{ transform: 'scaleX(-1) rotate(-18deg)' }}
+        />
+      </motion.div>
       {/* Mano derecha: ajustada y rotada para que los dedos toquen el extremo inferior derecho del gráfico */}
-      <Image
-        src="/assets/Mano%20dedos.png"
-        alt="Mano dedos"
-        width={700}
-        height={700}
-        className="absolute right-[-200px] bottom-[-40px] md:right-[-320px] md:bottom-[-80px] w-[420px] md:w-[700px] pointer-events-none select-none"
-        style={{ zIndex: 50, transform: 'scaleX(-1) rotate(16deg)' }}
-      />
+      <motion.div
+        initial={{ x: '100vw' }}
+        animate={{ x: 0 }}
+        transition={{ duration: 0.9, ease: 'easeOut', delay: 0.8 }}
+        className="absolute right-[-315px] bottom-[-315px] md:right-[-285px] md:bottom-[-335px] w-[420px] md:w-[1050px] pointer-events-none select-none"
+        style={{ zIndex: 30 }}
+      >
+        <Image
+          src="/assets/Mano%20dedos.png"
+          alt="Mano dedos"
+          width={1000}
+          height={1000}
+          style={{ transform: 'rotate(15deg) scaleY(-1)' }}
+        />
+      </motion.div>
       {/* Asterisco decorativo */}
-      <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg" className="absolute left-16 bottom-32 md:left-32 md:bottom-40 z-0">
-        <text x="0" y="48" fontFamily="Playfair Display" fontSize="60" fill="#B9C85E">*</text>
+      <svg width="350" height="350" viewBox="0 0 350 350" fill="none" xmlns="http://www.w3.org/2000/svg" className="absolute left-[290px] bottom-[-190px] md:left-[370px] md:bottom-[-180px] z-0">
+        <text x="0" y="300" fontFamily="Playfair Display" fontSize="350" fill="#B9C85E">*</text>
       </svg>
-    </section>
+      </div>
+    </>
   );
 }

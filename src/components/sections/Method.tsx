@@ -1,7 +1,13 @@
-
 "use client";
+
 import { motion } from "framer-motion";
 import Image from "next/image";
+import EsferaDoble from "../ui/EsferaDoble";
+import EsferasFase2 from "../ui/EsferasFase2";
+import EsferasFase3 from "../ui/EsferasFase3";
+import EsferasFase4 from "../ui/EsferasFase4";
+import EsferasFase5 from "../ui/EsferasFase5";
+
 
 export default function Method() {
   return (
@@ -26,19 +32,17 @@ export default function Method() {
       <div className="relative flex flex-col items-center justify-center min-h-[700px] bg-white">
       {/* SVG gráfico principal */}
       <div className="relative w-full flex justify-center items-center z-10" style={{ minHeight: 600, marginTop: '20px' }}>
-        <motion.div className="translate-x-[-25px]"
+        <motion.svg
+          width="966"
+          height="795"
+          viewBox="0 0 966 795"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          className="max-w-[80vw] md:max-w-[850px] w-full h-auto translate-x-[-25px]"
           initial={{ scale: 0 }}
           animate={{ scale: 1 }}
           transition={{ duration: 0.8, ease: 'easeOut' }}
         >
-          <motion.svg
-            width="966"
-            height="795"
-            viewBox="0 0 966 795"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-            className="max-w-[80vw] md:max-w-[850px] w-full h-auto"
-          >
           <g clipPath="url(#clip0_105_7205)">
             <path d="M965.41 393.12C964.22 267.26 911.64 153.69 827.63 72.39L506.9 393.12L832.03 718.25C914.42 636.32 965.43 522.86 965.43 397.48C965.43 396.03 965.42 394.58 965.4 393.12H965.41Z" stroke="#B9C85E" strokeWidth="2" strokeMiterlimit="10"/>
             <path d="M149.71 35.92C58.43 127.66 1.66 253.76 0.5 393.12H506.9L149.71 35.92Z" stroke="#B9C85E" strokeWidth="2" strokeMiterlimit="10"/>
@@ -54,8 +58,7 @@ export default function Method() {
               <rect width="965.94" height="794.94" fill="white"/>
             </clipPath>
           </defs>
-          </motion.svg>
-        </motion.div>
+        </motion.svg>
         <motion.div
           className="absolute inset-0 flex flex-col items-center justify-center z-20"
           style={{ maxWidth: '420px', margin: '0 auto' }}
@@ -100,10 +103,400 @@ export default function Method() {
         />
       </motion.div>
       {/* Asterisco decorativo */}
-      <svg width="350" height="350" viewBox="0 0 350 350" fill="none" xmlns="http://www.w3.org/2000/svg" className="absolute left-[290px] bottom-[-190px] md:left-[370px] md:bottom-[-180px] z-0">
+      {/* Asterisco decorativo animado */}
+      <motion.svg
+        width="350"
+        height="350"
+        viewBox="0 0 350 350"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+        className="absolute left-[290px] bottom-[-190px] md:left-[370px] md:bottom-[-180px] z-0"
+        initial={{ rotate: 0, opacity: 0 }}
+        animate={{ rotate: 360, opacity: 1 }}
+        transition={{ duration: 1.2, ease: "easeOut" }}
+      >
         <text x="0" y="300" fontFamily="Playfair Display" fontSize="350" fill="#B9C85E">*</text>
-      </svg>
+      </motion.svg>
       </div>
+      {/* Fases del método */}
+      <section className="w-full flex flex-col items-center justify-center bg-white py-12 mt-64">
+        <div className="w-full max-w-5xl px-2 md:px-8">
+          {/* Fase 1 */}
+          <div className="mb-12">
+            <div className="flex flex-col md:flex-row items-start md:items-center gap-8 md:gap-16">
+              {/* Columna texto */}
+              <div className="flex-1 min-w-0">
+                <motion.div
+                  initial={{ y: -60, opacity: 0 }}
+                  whileInView={{ y: 0, opacity: 1 }}
+                  viewport={{ once: true, amount: 0.6 }}
+                  transition={{ duration: 1.1, ease: "easeOut" }}
+                >
+                  <div className="flex items-center gap-2 mb-2">
+                    <span className="inline-block w-3 h-3 rounded-full bg-[#B9C85E]" />
+                    <span className="text-[#B9C85E] font-medium text-sm tracking-wide">Fase 1</span>
+                  </div>
+                  <h2 className="text-3xl md:text-4xl font-bold text-[#B9C85E] mb-4">Diagnóstico Neuroemocional</h2>
+                  <p className="text-base text-gray-700 mb-1">Identificamos exactamente dónde están las desconexiones emocionales que impactan tu negocio.</p>
+                  <p className="text-sm font-semibold text-[#1f1f1fff] mb-1">¿Qué ganas?</p>
+                  <p className="text-base text-gray-700">Sabes con precisión qué afecta tu retención de talento y clima laboral, sin adivinar.</p>
+                </motion.div>
+              </div>
+              {/* Columna gráfico */}
+              <div className="flex-shrink-0 flex justify-center w-full md:w-auto">
+                <div className="relative w-[120px] h-[120px] flex items-center justify-center">
+                <motion.div
+                  initial={{ x: -80, opacity: 0 }}
+                  whileInView={{ x: 0, opacity: 1 }}
+                  viewport={{ once: true, amount: 0.6 }}
+                  transition={{ duration: 1.1, ease: "easeOut" }}
+                >
+                  <EsferaDoble size={120} color1="#B9C85E" color2="#9FB350" opacity1={0.85} opacity2={0.85} />
+                </motion.div>
+              </div>
+            </div>
+            </div>
+          </div>
+          {/* Flecha entre Fase 1 y Fase 2 */}
+          <div className="w-full flex justify-center items-center my-2">
+            <motion.div
+              initial={{ scaleX: 0.7, opacity: 0 }}
+              whileInView={{ scaleX: 1, opacity: 1 }}
+              viewport={{ once: true, amount: 0.6 }}
+              transition={{ duration: 1, ease: "easeOut" }}
+              style={{ width: '100%' }}
+            >
+              <Image
+                src="/assets/Flecha-DI.svg"
+                alt="Flecha de derecha a izquierda"
+                width={810}
+                height={63}
+                style={{ maxWidth: '88%', height: 'auto' }}
+                priority={false}
+              />
+            </motion.div>
+          </div>
+          {/* Fase 2 */}
+          <div className="mb-12">
+            <div className="flex flex-col md:flex-row items-center gap-8 md:gap-16">
+              {/* Columna gráfico */}
+              <div className="flex-shrink-0 flex justify-center w-full md:w-auto order-1 md:order-1">
+                <motion.div
+                  initial={{ x: -80, opacity: 0 }}
+                  whileInView={{ x: 0, opacity: 1 }}
+                  viewport={{ once: true, amount: 0.6 }}
+                  transition={{ duration: 1.1, ease: "easeOut" }}
+                >
+                  <EsferasFase2 size1={80} size2={160} color="#B9C85E" />
+                </motion.div>
+              </div>
+              {/* Columna texto */}
+              <div className="flex-1 min-w-0 order-2 md:order-2">
+                <motion.div
+                  initial={{ y: -60, opacity: 0 }}
+                  whileInView={{ y: 0, opacity: 1 }}
+                  viewport={{ once: true, amount: 0.6 }}
+                  transition={{ duration: 1.1, ease: "easeOut" }}
+                >
+                  <div className="flex items-center gap-2 mb-2">
+                    <span className="inline-block w-3 h-3 rounded-full bg-[#B9C85E]" />
+                    <span className="text-[#B9C85E] font-medium text-sm tracking-wide">Fase 2</span>
+                  </div>
+                  <h2 className="text-3xl md:text-4xl font-bold text-[#B9C85E] mb-4">Diseño Experiencial Personalizado</h2>
+                  <p className="text-base text-gray-700 mb-1">Creamos experiencias multisensoriales específicas para los patrones emocionales de tu equipo.</p>
+                  <p className="text-sm font-semibold text-[#1f1f1fff] mb-1">¿Qué ganas?</p>
+                  <p className="text-base text-gray-700">Un programa único que habla el "idioma emocional" de tu organización, no una receta genérica.</p>
+                </motion.div>
+              </div>
+            </div>
+          </div>
+          {/* Flecha entre Fase 2 y Fase 3 */}
+          <div className="w-full flex justify-center items-center my-2">
+            <motion.div
+              initial={{ scaleX: 0.7, opacity: 0 }}
+              whileInView={{ scaleX: 1, opacity: 1 }}
+              viewport={{ once: true, amount: 0.6 }}
+              transition={{ duration: 1, ease: "easeOut" }}
+              style={{ width: '100%' }}
+            >
+              <Image
+                src="/assets/Flecha-ID.svg"
+                alt="Flecha de derecha a izquierda"
+                width={810}
+                height={63}
+                style={{ maxWidth: '88%', height: 'auto' }}
+                priority={false}
+              />
+            </motion.div>
+          </div>
+          {/* Fase 3 */}
+          <div className="mb-12">
+            <div className="flex flex-col md:flex-row items-center gap-8 md:gap-16">
+              {/* Columna texto */}
+              <div className="flex-1 min-w-0 order-1">
+                <motion.div
+                  initial={{ y: -60, opacity: 0 }}
+                  whileInView={{ y: 0, opacity: 1 }}
+                  viewport={{ once: true, amount: 0.6 }}
+                  transition={{ duration: 1.1, ease: "easeOut" }}
+                >
+                  <div className="flex items-center gap-2 mb-2">
+                    <span className="inline-block w-3 h-3 rounded-full bg-[#B9C85E]" />
+                    <span className="text-[#B9C85E] font-medium text-sm tracking-wide">Fase 3</span>
+                  </div>
+                  <h2 className="text-3xl md:text-4xl font-bold text-[#B9C85E] mb-4">Activación Neuroplástica</h2>
+                  <p className="text-base text-gray-700 mb-1">Implementamos dinámicas que reorganizan el cerebro para crear nuevos hábitos relacionales.</p>
+                  <p className="text-sm font-semibold text-[#1f1f1fff] mb-1">¿Qué ganas?</p>
+                  <p className="text-base text-gray-700">Cambios estables y duraderos, no solo motivación temporal que se desvanece.</p>
+                </motion.div>
+              </div>
+              {/* Columna gráfico */}
+              <div className="flex-shrink-0 flex justify-center w-full md:w-auto order-2">
+                <motion.div
+                  initial={{ x: 80, rotate: 0, opacity: 0 }}
+                  whileInView={{ x: 0, rotate: 360, opacity: 1 }}
+                  viewport={{ once: true, amount: 0.6 }}
+                  transition={{ x: { duration: 1.1, ease: "easeOut" }, rotate: { duration: 1, ease: "easeOut" }, opacity: { duration: 1.1 } }}
+                >
+                  <EsferasFase3 radius={90} sphereRadius={32} color="#B9C85E" />
+                </motion.div>
+              </div>
+            </div>
+          </div>
+          {/* Flecha entre Fase 3 y Fase 4 */}
+          <div className="w-full flex justify-center items-center my-2">
+            <motion.div
+              initial={{ scaleX: 0.7, opacity: 0 }}
+              whileInView={{ scaleX: 1, opacity: 1 }}
+              viewport={{ once: true, amount: 0.6 }}
+              transition={{ duration: 1, ease: "easeOut" }}
+              style={{ width: '100%' }}
+            >
+              <Image
+                src="/assets/Flecha-DI.svg"
+                alt="Flecha de derecha a izquierda"
+                width={810}
+                height={63}
+                style={{ maxWidth: '88%', height: 'auto' }}
+                priority={false}
+              />
+            </motion.div>
+          </div>
+          {/* Fase 4 */}
+          <div className="mb-12">
+            <div className="flex flex-col md:flex-row items-center gap-8 md:gap-16">
+              {/* Columna gráfico */}
+              <div className="flex-shrink-0 flex justify-center w-full md:w-auto order-1">
+                <motion.div
+                  initial={{ x: -60, y: 60, opacity: 0 }}
+                  whileInView={{ x: 0, y: 0, opacity: 1 }}
+                  viewport={{ once: true, amount: 0.6 }}
+                  transition={{ duration: 1.1, ease: "easeOut" }}
+                >
+                  <EsferasFase4 sphereRadius={32} color="#B9C85E" />
+                </motion.div>
+              </div>
+              {/* Columna texto */}
+              <div className="flex-1 min-w-0 order-2">
+                <motion.div
+                  initial={{ y: -60, opacity: 0 }}
+                  whileInView={{ y: 0, opacity: 1 }}
+                  viewport={{ once: true, amount: 0.6 }}
+                  transition={{ duration: 1.1, ease: "easeOut" }}
+                >
+                  <div className="flex items-center gap-2 mb-2">
+                    <span className="inline-block w-3 h-3 rounded-full bg-[#B9C85E]" />
+                    <span className="text-[#B9C85E] font-medium text-sm tracking-wide">Fase 4</span>
+                  </div>
+                  <h2 className="text-3xl md:text-4xl font-bold text-[#B9C85E] mb-4">Consolidación Grupal</h2>
+                  <p className="text-base text-gray-700 mb-1">Los equipos practican y refuerzan las nuevas formas de relacionarse.</p>
+                  <p className="text-sm font-semibold text-[#1f1f1fff] mb-1">¿Qué ganas?</p>
+                  <p className="text-base text-gray-700">La transformación se vuelve cultura organizacional, no esfuerzo individual que se pierde.</p>
+                </motion.div>
+              </div>
+            </div>
+          </div>
+          {/* Flecha entre Fase 4 y Fase 5 */}
+          <div className="w-full flex justify-center items-center my-2">
+            <motion.div
+              initial={{ scaleX: 0.7, opacity: 0 }}
+              whileInView={{ scaleX: 1, opacity: 1 }}
+              viewport={{ once: true, amount: 0.6 }}
+              transition={{ duration: 1, ease: "easeOut" }}
+              style={{ width: '100%' }}
+            >
+              <Image
+                src="/assets/Flecha-ID.svg"
+                alt="Flecha de derecha a izquierda"
+                width={810}
+                height={63}
+                style={{ maxWidth: '88%', height: 'auto' }}
+                priority={false}
+              />
+            </motion.div>
+          </div>
+          {/* Fase 5 */}
+          <div>
+            <div className="flex flex-col md:flex-row items-center gap-8 md:gap-16">
+              {/* Columna texto */}
+              <div className="flex-1 min-w-0 order-1">
+                <motion.div
+                  initial={{ y: -60, opacity: 0 }}
+                  whileInView={{ y: 0, opacity: 1 }}
+                  viewport={{ once: true, amount: 0.6 }}
+                  transition={{ duration: 1.1, ease: "easeOut" }}
+                >
+                  <div className="flex items-center gap-2 mb-2">
+                    <span className="inline-block w-3 h-3 rounded-full bg-[#B9C85E]" />
+                    <span className="text-[#B9C85E] font-medium text-sm tracking-wide">Fase 5</span>
+                  </div>
+                  <h2 className="text-3xl md:text-4xl font-bold text-[#B9C85E] mb-4">Seguimiento transformacional</h2>
+                  <p className="text-base text-gray-700 mb-1">Medimos el progreso con indicadores específicos de clima laboral y retención.</p>
+                  <p className="text-sm font-semibold text-[#1f1f1fff] mb-1">¿Qué ganas?</p>
+                  <p className="text-base text-gray-700">Evidencia clara del ROI y garantía de cambios sostenidos.</p>
+                </motion.div>
+              </div>
+              {/* Columna gráfico */}
+              <div className="flex-shrink-0 flex justify-center w-full md:w-auto order-2">
+                <motion.div
+                  initial={{ scale: 0.8, opacity: 0 }}
+                  whileInView={{ scale: 1, opacity: 1 }}
+                  viewport={{ once: true, amount: 0.6 }}
+                  transition={{ duration: 1, ease: "easeOut" }}
+                >
+                  <EsferasFase5 sphereRadius={32} color1="#9FB350" color2="#d6e288ff" />
+                </motion.div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Sección Los Autores */}
+      <section className="w-full flex flex-col items-center justify-center bg-[#F9FAFB] py-20">
+        <div className="flex flex-col md:flex-row items-center justify-center gap-16 w-full max-w-5xl mx-auto">
+          {/* Autor 1 */}
+          <div className="flex flex-col items-center w-full md:w-1/2">
+            {/* SVG decorativo detrás de la foto */}
+            <div className="relative flex items-center justify-center mb-4">
+              {/* SVG autor 1 grande, arriba a la izquierda animado */}
+              <motion.div
+                className="absolute -top-12 -left-12 z-0"
+                initial={{ x: -80, opacity: 0 }}
+                whileInView={{ x: 0, opacity: 1 }}
+                viewport={{ once: true, amount: 0.6 }}
+                transition={{ duration: 1, ease: "easeOut" }}
+              >
+                <svg width="260" height="260" viewBox="0 0 295 295" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M73.4752 0L80.0692 28.2597C84.5436 47.335 99.6154 62.4068 118.691 66.8813L146.95 73.4752L118.691 80.0692C99.6154 84.5436 84.5436 99.6155 80.0692 118.691L73.4752 146.95L66.8813 118.691C62.4068 99.6155 47.335 84.5436 28.2597 80.0692L0 73.4752L28.2597 66.8813C47.335 62.4068 62.4068 47.335 66.8813 28.2597L73.4752 0Z" fill="#d6e288ff"/>
+                  <path d="M220.661 0L227.255 28.2597C231.73 47.335 246.801 62.4068 265.877 66.8813L294.136 73.4752L265.877 80.0692C246.801 84.5436 231.73 99.6155 227.255 118.691L220.661 146.95L214.067 118.691C209.593 99.6155 194.521 84.5436 175.446 80.0692L147.186 73.4752L175.446 66.8813C194.521 62.4068 209.593 47.335 214.067 28.2597L220.661 0Z" fill="#d6e288ff"/>
+                  <path d="M73.4752 147.186L80.0692 175.446C84.5436 194.521 99.6154 209.593 118.691 214.067L146.95 220.661L118.691 227.255C99.6154 231.73 84.5436 246.801 80.0692 265.877L73.4752 294.136L66.8813 265.877C62.4068 246.801 47.335 231.73 28.2597 227.255L0 220.661L28.2597 214.067C47.335 209.593 62.4068 194.521 66.8813 175.446L73.4752 147.186Z" fill="#d6e288ff"/>
+                  <path d="M220.661 147.186L227.255 175.446C231.73 194.521 246.801 209.593 265.877 214.067L294.136 220.661L265.877 227.255C246.801 231.73 231.73 246.801 227.255 265.877L220.661 294.136L214.067 265.877C209.593 246.801 194.521 231.73 175.446 227.255L147.186 220.661L175.446 214.067C194.521 209.593 209.593 194.521 214.067 175.446L220.661 147.186Z" fill="#d6e288ff"/>
+                </svg>
+              </motion.div>
+              <div className="relative z-10">
+                <motion.div
+                  className="rounded-full overflow-hidden w-96 h-96 flex items-center justify-center bg-transparent"
+                  initial={{ scale: 0, opacity: 0 }}
+                  whileInView={{ scale: 1, opacity: 1 }}
+                  viewport={{ once: true, amount: 0.6 }}
+                  transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
+                >
+                  <Image
+                    src="/assets/PersonaIzquierda.png"
+                    alt="Foto autor 1"
+                    width={384}
+                    height={384}
+                    className="object-cover w-96 h-96"
+                  />
+                </motion.div>
+              </div>
+            </div>
+            <motion.p
+              className="text-center text-lg text-gray-700 max-w-xs mt-4"
+              initial={{ y: 40, opacity: 0 }}
+              whileInView={{ y: 0, opacity: 1 }}
+              viewport={{ once: true, amount: 0.6 }}
+              transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
+            >
+              De equipos técnicamente competentes, pero emocionalmente desconectados
+            </motion.p>
+          </div>
+          {/* Flecha decorativa entre autores */}
+          <div className="hidden md:flex items-center justify-center h-full">
+            <motion.span
+              className="text-6xl text-[#303030ff]"
+              initial={{ x: -80, opacity: 0 }}
+              whileInView={{ x: 0, opacity: 1 }}
+              viewport={{ once: true, amount: 0.6 }}
+              transition={{ duration: 0.7, ease: "easeOut", delay: 0.7 }}
+            >
+              →
+            </motion.span>
+          </div>
+          {/* Autor 2 */}
+          <div className="flex flex-col items-center w-full md:w-1/2">
+            {/* SVG decorativo detrás de la foto */}
+            <div className="relative flex items-center justify-center mb-4">
+              {/* SVG autor 2 grande, arriba a la derecha animado */}
+              <motion.div
+                className="absolute -top-12 -right-12 z-0"
+                initial={{ x: 80, opacity: 0 }}
+                whileInView={{ x: 0, opacity: 1 }}
+                viewport={{ once: true, amount: 0.6 }}
+                transition={{ duration: 1, ease: "easeOut" }}
+              >
+                <svg width="290" height="290" viewBox="0 0 319 320" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M319 160C319 160 289.397 139.264 244.992 124.416C265.918 82.432 272.298 46.848 272.298 46.848C272.298 46.848 236.826 52.992 194.973 74.24C180.171 29.696 159.5 0 159.5 0C159.5 0 138.829 29.696 124.027 74.24C82.1744 53.248 46.7016 46.848 46.7016 46.848C46.7016 46.848 52.8264 82.432 74.008 124.416C29.6032 139.264 0 160 0 160C0 160 29.6032 180.736 74.008 195.584C53.0816 237.568 46.7016 273.152 46.7016 273.152C46.7016 273.152 82.1744 267.008 124.027 245.76C138.829 290.304 159.5 320 159.5 320C159.5 320 180.171 290.304 194.973 245.76C236.826 266.752 272.298 273.152 272.298 273.152C272.298 273.152 266.174 237.568 244.992 195.584C289.397 180.736 319 160 319 160ZM209.519 160C209.519 166.912 209.264 173.824 208.754 180.48C204.415 185.6 199.822 190.72 194.973 195.584C190.124 200.448 185.02 205.056 179.916 209.408C173.281 209.92 166.39 210.176 159.5 210.176C152.61 210.176 145.719 209.92 139.084 209.408C133.98 205.056 128.876 200.448 124.027 195.584C119.178 190.72 114.585 185.6 110.246 180.48C109.736 173.824 109.481 166.912 109.481 160C109.481 153.088 109.736 146.176 110.246 139.52C114.585 134.4 119.178 129.28 124.027 124.416C128.876 119.552 133.98 114.944 139.084 110.592C145.719 110.08 152.61 109.824 159.5 109.824C166.39 109.824 173.281 110.08 179.916 110.592C185.02 114.944 190.124 119.552 194.973 124.416C199.822 129.28 204.415 134.4 208.754 139.52C209.264 146.176 209.519 153.088 209.519 160Z" fill="#9FB350"/>
+                </svg>
+              </motion.div>
+              <div className="relative z-10">
+                <motion.div
+                  className="rounded-full overflow-hidden w-96 h-96 flex items-center justify-center bg-transparent"
+                  initial={{ scale: 0, opacity: 0 }}
+                  whileInView={{ scale: 1, opacity: 1 }}
+                  viewport={{ once: true, amount: 0.6 }}
+                  transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
+                >
+                  <Image
+                    src="/assets/PersonaDerecha.png"
+                    alt="Foto autor 2"
+                    width={384}
+                    height={384}
+                    className="object-cover w-96 h-96"
+                  />
+                </motion.div>
+              </div>
+            </div>
+            <motion.p
+              className="text-center text-lg text-gray-700 max-w-xs mt-4"
+              initial={{ y: 40, opacity: 0 }}
+              whileInView={{ y: 0, opacity: 1 }}
+              viewport={{ once: true, amount: 0.6 }}
+              transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
+            >
+              a equipos que colaboran naturalmente y generan clima donde todos quieren trabajar.
+            </motion.p>
+          </div>
+        </div>
+        {/* Botón CTA debajo de autores */}
+      <div className="w-full flex flex-col items-center justify-center mt-10 mb-20">
+        <motion.div
+          initial={{ opacity: 0, scale: 0.9 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6, delay: 0.4 }}
+          className="mb-4 relative z-20"
+        >
+          <button className="bg-[#9FB350] hover:bg-[#d6e288ff] text-white font-libre font-bold px-8 py-4 rounded-full text-lg transition-colors flex items-center gap-2 mx-auto">
+            Descubre cómo lo hacemos realidad
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-5 h-5">
+              <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+            </svg>
+          </button>
+        </motion.div>
+      </div>
+      </section>
     </>
   );
 }

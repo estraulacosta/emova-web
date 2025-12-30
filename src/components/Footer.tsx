@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 
 
 export default function Footer() {
@@ -9,9 +10,9 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto">
         {/* Bloque superior: logo y redes */}
         <div className="flex items-center justify-between pb-4 border-b border-white/30">
-          <div className="flex items-center">
+          <Link href="/" className="flex items-center">
             <Image src="/assets/logo_blanco.svg" alt="Emova Logo" width={160} height={40} className="h-12 w-auto" />
-          </div>
+          </Link>
           <div className="flex items-center gap-4">
             <span className="font-playfair font-bold text-lg mr-2">Síguenos</span>
             <a href="#" aria-label="Facebook" className="hover:scale-110 transition-transform">
@@ -29,9 +30,9 @@ export default function Footer() {
             <div className="md:min-w-[140px]">
               <h4 className="font-playfair font-bold mb-2 text-lg">Links</h4>
               <ul className="space-y-1 text-white/90">
-                <li><a href="#" className="hover:underline">Home</a></li>
-                <li><a href="#nosotros" className="hover:underline">Nosotros</a></li>
-                <li><a href="#servicios" className="hover:underline">Servicios</a></li>
+                <li><Link href="/" className="hover:underline">Home</Link></li>
+                <li><Link href="/nosotros" className="hover:underline">Nosotros</Link></li>
+                <li><Link href="/metodo" className="hover:underline">Método</Link></li>
                 <li><a href="#contacto" className="hover:underline">Contacto</a></li>
               </ul>
             </div>
@@ -51,7 +52,7 @@ export default function Footer() {
             <div className="md:min-w-[140px]">
               <h4 className="font-playfair font-bold mb-2 text-lg">Servicios</h4>
               <ul className="space-y-1 text-white/90">
-                <li><a href="/metodo" className="hover:underline">Métodos</a></li>
+                <li><Link href="/metodo" className="hover:underline">Métodos</Link></li>
                 <li><a href="#evidencia" className="hover:underline">Evidencia</a></li>
                 <li><a href="#diagnostico" className="hover:underline">Diagnóstico</a></li>
               </ul>

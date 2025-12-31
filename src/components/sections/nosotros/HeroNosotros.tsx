@@ -112,7 +112,7 @@ export default function HeroNosotros() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.8, delay: 0.5 }}
-              className="relative z-20 max-w-sm md:max-w-2xl lg:max-w-3xl mx-auto text-left space-y-4 md:space-y-5 px-6 md:px-6 pt-4 md:pt-10 lg:pt-5 pb-8 md:pb-0 mt-32 md:mt-0"
+              className="relative z-20 max-w-sm md:max-w-2xl lg:max-w-3xl mx-auto text-left space-y-4 md:space-y-5 px-20 md:px- lg:px-6 pt-4 md:pt-10 lg:pt-5 pb-8 md:pb-0 mt-32 md:mt-0 lg:mt-0 top-12 md:top-20 lg:top-32"
             >
               <p className="text-emova-grey/80 font-libre text-sm md:text-base lg:text-lg leading-relaxed">
                 En la era de la Inteligencia Artificial y automatización masiva, 
@@ -162,7 +162,7 @@ export default function HeroNosotros() {
                 La paradoja devastadora
               </h2>
               
-              <div className="space-y-6 sm:text-2xl md:text-base lg:text-lg leading-relaxed space-y-6 text-white/90 font-libre text-sm md:text-base lg:text-lg leading-relaxed">
+              <div className="space-y-6 md:text-base lg:text-lg leading-relaxed space-y-6 text-white/90 font-libre text-sm md:text-base lg:text-lg leading-relaxed max-w-2xl md:max-w-2xl lg:max-w-3xl">
                 <p>
                   Mientras las empresas invierten millones en tecnología para 
                   "conectar" mejor, sus colaboradores están más desconectados 
@@ -215,7 +215,7 @@ export default function HeroNosotros() {
                 {/* Texto posicionado sobre la burbuja */}
                 <div className="absolute top-[25%] md:top-[30%] left-[8%] md:left-[10%] right-[8%] md:right-[10%] space-y-3 md:space-y-4">
                   <p className="text-emova-grey/80 font-libre text-xs md:text-sm lg:text-base leading-relaxed">
-                    En Alto Grado® creemos que el valor real de una empresa 
+                    En Emova® creemos que el valor real de una empresa 
                     está en las personas.
                   </p>
                   <p className="text-emova-grey/80 font-libre text-xs md:text-sm lg:text-base leading-relaxed">

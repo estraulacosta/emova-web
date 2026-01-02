@@ -53,7 +53,7 @@ export default function Navbar() {
           />
         </Link>
 
-        <div className="hidden md:flex items-center space-x-8">
+        <div className="hidden lg:flex items-center space-x-8">
           {navLinks.map((link) => (
             <Link
               key={link.name}
@@ -82,7 +82,7 @@ export default function Navbar() {
         </div>
 
         <button
-          className={`md:hidden ${isScrolled ? "text-emova-grey" : "text-white"}`}
+          className={`lg:hidden ${isScrolled ? "text-emova-grey" : "text-white"}`}
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
         >
           {isMobileMenuOpen ? <X /> : <Menu />}
@@ -95,7 +95,7 @@ export default function Navbar() {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
-            className="md:hidden bg-white border-t border-gray-100 overflow-hidden"
+            className="lg:hidden bg-white border-t border-gray-100 overflow-hidden"
           >
             <div className="flex flex-col p-6 space-y-4">
               {navLinks.map((link) => (

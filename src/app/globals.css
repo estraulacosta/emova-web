@@ -18,6 +18,10 @@
   --foreground: #575756;
 }
 
+html {
+  overflow-x: hidden;
+}
+
 body {
   overflow-x: hidden;
   background: var(--background);

@@ -2,12 +2,13 @@
 import React from "react";
 import { motion } from "framer-motion";
 
-interface EsferaProps extends React.SVGProps<SVGSVGElement> {
+interface EsferaProps {
   size?: number;
   color?: string;
+  className?: string;
 }
 
-const Esfera: React.FC<EsferaProps> = ({ size = 80, color = "#05DBED", ...props }) => (
+const Esfera: React.FC<EsferaProps> = ({ size = 80, color = "#05DBED", className }) => (
   <motion.svg
     width={size}
     height={size}
@@ -18,7 +19,7 @@ const Esfera: React.FC<EsferaProps> = ({ size = 80, color = "#05DBED", ...props 
     whileInView={{ scale: 1, opacity: 1 }}
     viewport={{ once: true, amount: 0.5 }}
     transition={{ duration: 0.6, ease: "easeOut" }}
-    {...props}
+    className={className}
   >
     <motion.circle 
       cx="145.5" 

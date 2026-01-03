@@ -1,4 +1,6 @@
+"use client";
 import React from "react";
+import { motion } from "framer-motion";
 
 interface FlechaCurvaProps {
   color?: string;
@@ -11,7 +13,7 @@ const FlechaCurva: React.FC<FlechaCurvaProps> = ({
   strokeWidth = 2,
   className = "",
 }) => (
-  <svg
+  <motion.svg
     width="100%"
     height="120"
     viewBox="0 0 1000 120"
@@ -19,22 +21,34 @@ const FlechaCurva: React.FC<FlechaCurvaProps> = ({
     xmlns="http://www.w3.org/2000/svg"
     className={className}
     style={{ minWidth: 320, maxWidth: 1000 }}
+    initial={{ opacity: 0, pathLength: 0 }}
+    whileInView={{ opacity: 1, pathLength: 1 }}
+    viewport={{ once: true, amount: 0.3 }}
+    transition={{ duration: 1.5, ease: "easeInOut" }}
   >
     {/* Flecha de arriba derecha a abajo izquierda */}
-    <path
+    <motion.path
       d="M950 20 Q950 110 500 110 Q50 110 50 100"
       stroke={color}
       strokeWidth={strokeWidth}
       strokeDasharray="8 6"
       fill="none"
+      initial={{ pathLength: 0 }}
+      whileInView={{ pathLength: 1 }}
+      viewport={{ once: true, amount: 0.3 }}
+      transition={{ duration: 1.5, ease: "easeInOut" }}
     />
-    <polyline
+    <motion.polyline
       points="50,100 60,110 50,120"
       fill="none"
       stroke={color}
       strokeWidth={strokeWidth}
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      viewport={{ once: true, amount: 0.3 }}
+      transition={{ duration: 0.3, delay: 1.3 }}
     />
-  </svg>
+  </motion.svg>
 );
 
 export default FlechaCurva;

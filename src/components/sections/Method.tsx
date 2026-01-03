@@ -25,7 +25,7 @@ export default function Method() {
           initial={false}
           animate={{ y: 0 }}
           transition={{ duration: 0.8, ease: 'easeOut', delay: 0.8 }}
-          className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-playfair font-bold text-white text-center px-4 mt-[15px] md:mt-[25px] lg:mt-0"
+          className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-playfair font-bold text-white text-center px-4 mt-[60px] sm:mt-[65px] md:mt-[65px] lg:mt-[40px]"
         >
           Método
         </motion.h1>

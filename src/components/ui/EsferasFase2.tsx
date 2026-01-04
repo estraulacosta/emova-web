@@ -3,14 +3,16 @@ import React from "react";
 interface EsferasFase2Props {
   size1?: number;
   size2?: number;
-  color?: string;
+  color1?: string;
+  color2?: string;
   className?: string;
 }
 
 const EsferasFase2: React.FC<EsferasFase2Props> = ({
   size1 = 80,
   size2 = 160,
-  color = "#5B4AE0",
+  color1 = "#5B4AE0",
+  color2 = "#B9C85E",
   className = "",
 }) => (
   <svg
@@ -26,7 +28,7 @@ const EsferasFase2: React.FC<EsferasFase2Props> = ({
       cx={size1 / 2 + 10}
       cy={size2 / 2 + 20}
       r={size1 / 2}
-      fill={color}
+      fill={color1}
       fillOpacity={0.85}
     />
     {/* Esfera grande */}
@@ -34,7 +36,7 @@ const EsferasFase2: React.FC<EsferasFase2Props> = ({
       cx={size1 + size2 / 2 + 10}
       cy={size2 / 2 + 10}
       r={size2 / 2}
-      fill={color}
+      fill={color2}
       fillOpacity={0.85}
     />
   </svg>

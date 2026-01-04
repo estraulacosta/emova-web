@@ -18,7 +18,7 @@ export default function Method() {
         initial={{ y: -80 }}
         animate={{ y: 0 }}
         transition={{ duration: 0.8, ease: 'easeOut', delay: 0.8 }}
-        className="w-full bg-[#B9C85E] flex justify-center items-center py-6 sm:py-8 md:py-12 lg:h-[220px] mt-20 sm:mt-24 md:mt-12"
+        className="w-full bg-emova-primary flex justify-center items-center py-6 sm:py-8 md:py-12 lg:h-[220px] mt-20 sm:mt-24 md:mt-12"
         style={{zIndex: 10, position: 'relative'}}
       >
         <motion.h1
@@ -45,14 +45,14 @@ export default function Method() {
           transition={{ duration: 0.8, ease: 'easeOut' }}
         >
           <g clipPath="url(#clip0_105_7205)">
-            <path d="M965.41 393.12C964.22 267.26 911.64 153.69 827.63 72.39L506.9 393.12L832.03 718.25C914.42 636.32 965.43 522.86 965.43 397.48C965.43 396.03 965.42 394.58 965.4 393.12H965.41Z" stroke="#B9C85E" strokeWidth="2" strokeMiterlimit="10"/>
-            <path d="M149.71 35.92C58.43 127.66 1.66 253.76 0.5 393.12H506.9L149.71 35.92Z" stroke="#B9C85E" strokeWidth="2" strokeMiterlimit="10"/>
-            <path d="M851.07 397.47C851.07 396.01 851.03 394.57 851.01 393.11H734.79C734.82 394.56 734.85 396.01 734.85 397.47C734.85 459.17 709.65 514.98 668.98 555.18L751.16 637.36C812.86 576.12 851.07 491.26 851.07 397.47Z" fill="#9FB350"/>
+            <path d="M965.41 393.12C964.22 267.26 911.64 153.69 827.63 72.39L506.9 393.12L832.03 718.25C914.42 636.32 965.43 522.86 965.43 397.48C965.43 396.03 965.42 394.58 965.4 393.12H965.41Z" stroke="var(--color-emova-primary)" strokeWidth="2" strokeMiterlimit="10"/>
+            <path d="M149.71 35.92C58.43 127.66 1.66 253.76 0.5 393.12H506.9L149.71 35.92Z" stroke="var(--color-emova-primary)" strokeWidth="2" strokeMiterlimit="10"/>
+            <path d="M851.07 397.47C851.07 396.01 851.03 394.57 851.01 393.11H734.79C734.82 394.56 734.85 396.01 734.85 397.47C734.85 459.17 709.65 514.98 668.98 555.18L751.16 637.36C812.86 576.12 851.07 491.26 851.07 397.47Z" fill="#E8F5CB"/>
             <path d="M746.75 153.28C686.05 95.18 603.73 59.48 513.07 59.48C511.01 59.48 508.96 59.52 506.91 59.56C415.56 61.19 333.07 99.05 273.18 159.39L355.36 241.57C394.22 202.26 447.66 177.4 506.91 175.79C508.96 175.73 511.01 175.7 513.07 175.7C571.64 175.7 624.89 198.41 664.54 235.5C706.82 275.05 733.6 330.95 734.8 393.12H851.02C849.83 298.85 810.06 213.88 746.76 153.28H746.75Z" fill="#D9D9D9"/>
-            <path d="M668.98 555.18C628.92 594.79 573.85 619.25 513.07 619.25C511.01 619.25 508.96 619.22 506.91 619.16C445.46 617.48 390.26 590.81 351.09 548.94C314 509.3 291.29 456.04 291.29 397.47C291.29 396.01 291.32 394.56 291.35 393.11C292.49 334.05 316.7 280.66 355.36 241.56L273.18 159.38C213.49 219.52 176.28 301.97 175.13 393.11C175.11 394.56 175.07 396.01 175.07 397.47C175.07 488.13 210.77 570.45 268.87 631.15C329.08 694.05 413.36 733.72 506.91 735.39C508.96 735.43 511.01 735.47 513.07 735.47C605.95 735.47 690.07 698 751.16 637.36L668.98 555.18Z" fill="#B9C85E"/>
-            <path d="M231.72 117.41C303.61 45.2 403.12 0.5 513.07 0.5C623.02 0.5 717.01 42.76 788.38 111.48" stroke="#B9C85E" strokeWidth="2" strokeMiterlimit="10"/>
-            <path d="M792.81 679.13C721.05 750.4 622.2 794.44 513.07 794.44C293.83 794.44 116.1 616.71 116.1 397.47C116.1 395.97 116.1 394.48 116.12 392.99" stroke="#B9C85E" strokeWidth="2" strokeMiterlimit="10"/>
-            <path d="M514.12 621.05C637.34 621.05 737.23 521.16 737.23 397.94C737.23 274.72 637.34 174.83 514.12 174.83C390.9 174.83 291.01 274.72 291.01 397.94C291.01 521.16 390.9 621.05 514.12 621.05Z" fill="#F9FAFB"/>
+            <path d="M668.98 555.18C628.92 594.79 573.85 619.25 513.07 619.25C511.01 619.25 508.96 619.22 506.91 619.16C445.46 617.48 390.26 590.81 351.09 548.94C314 509.3 291.29 456.04 291.29 397.47C291.29 396.01 291.32 394.56 291.35 393.11C292.49 334.05 316.7 280.66 355.36 241.56L273.18 159.38C213.49 219.52 176.28 301.97 175.13 393.11C175.11 394.56 175.07 396.01 175.07 397.47C175.07 488.13 210.77 570.45 268.87 631.15C329.08 694.05 413.36 733.72 506.91 735.39C508.96 735.43 511.01 735.47 513.07 735.47C605.95 735.47 690.07 698 751.16 637.36L668.98 555.18Z" fill="var(--color-emova-primary)"/>
+            <path d="M231.72 117.41C303.61 45.2 403.12 0.5 513.07 0.5C623.02 0.5 717.01 42.76 788.38 111.48" stroke="var(--color-emova-primary)" strokeWidth="2" strokeMiterlimit="10"/>
+            <path d="M792.81 679.13C721.05 750.4 622.2 794.44 513.07 794.44C293.83 794.44 116.1 616.71 116.1 397.47C116.1 395.97 116.1 394.48 116.12 392.99" stroke="var(--color-emova-primary)" strokeWidth="2" strokeMiterlimit="10"/>
+            <path d="M514.12 621.05C637.34 621.05 737.23 521.16 737.23 397.94C737.23 274.72 637.34 174.83 514.12 174.83C390.9 174.83 291.01 274.72 291.01 397.94C291.01 521.16 390.9 621.05 514.12 621.05Z" fill="white"/>
           </g>
           <defs>
             <clipPath id="clip0_105_7205">
@@ -67,7 +67,7 @@ export default function Method() {
           animate={{ scale: 1 }}
           transition={{ duration: 0.8, ease: 'easeOut' }}
         >
-          <h2 className="text-lg sm:text-xl md:text-2xl lg:text-4xl font-playfair font-bold text-[#7A7A7A] text-center mb-1 sm:mb-2 md:mb-2 leading-tight md:leading-tight lg:leading-normal">Modelo de<br/>transformación <span className="text-[#9FB350]">neuroemocional™</span></h2>
+          <h2 className="text-lg sm:text-xl md:text-2xl lg:text-4xl font-playfair font-bold text-emova-grey text-center mb-1 sm:mb-2 md:mb-2 leading-tight md:leading-tight lg:leading-normal">Modelo de<br/>transformación <span className="text-emova-secondary">neuroemocional™</span></h2>
           <p className="text-xs sm:text-sm md:text-base lg:text-lg text-emova-grey/80 text-center font-noto mb-2 leading-tight md:leading-tight lg:leading-normal px-6 sm:px-5 md:px-6 lg:px-0">El único método que garantiza<br/>cambios neurológicos reales y medibles</p>
         </motion.div>
       </div>
@@ -114,7 +114,7 @@ export default function Method() {
         animate={{ rotate: 360, opacity: 1 }}
         transition={{ duration: 1.2, ease: "easeOut" }}
       >
-        <text x="0" y="300" fontFamily="Playfair Display" fontSize="350" fill="#B9C85E">*</text>
+        <text x="0" y="300" fontFamily="Playfair Display" fontSize="350" fill="var(--color-emova-primary)">*</text>
       </motion.svg>
       </div>
       {/* Fases del método */}
@@ -132,12 +132,12 @@ export default function Method() {
                   transition={{ duration: 1.1, ease: "easeOut" }}
                 >
                   <div className="flex items-center gap-2 mb-2">
-                    <span className="inline-block w-3 h-3 rounded-full bg-[#B9C85E]" />
-                    <span className="text-[#B9C85E] font-medium text-sm tracking-wide">Fase 1</span>
+                    <span className="inline-block w-3 h-3 rounded-full bg-emova-primary" />
+                    <span className="text-emova-primary font-medium text-sm tracking-wide">Fase 1</span>
                   </div>
-                  <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-[#B9C85E] mb-4">Diagnóstico Neuroemocional</h2>
+                  <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-emova-primary mb-4">Diagnóstico Neuroemocional</h2>
                   <p className="text-sm sm:text-base text-gray-700 mb-1">Identificamos exactamente dónde están las desconexiones emocionales que impactan tu negocio.</p>
-                  <p className="text-xs sm:text-sm font-semibold text-[#1f1f1fff] mb-1">¿Qué ganas?</p>
+                  <p className="text-xs sm:text-sm font-semibold text-emova-grey mb-1">¿Qué ganas?</p>
                   <p className="text-sm sm:text-base text-gray-700">Sabes con precisión qué afecta tu retención de talento y clima laboral, sin adivinar.</p>
                 </motion.div>
               </div>
@@ -150,7 +150,7 @@ export default function Method() {
                   viewport={{ once: true, amount: 0.6 }}
                   transition={{ duration: 1.1, ease: "easeOut" }}
                 >
-                  <EsferaDoble size={108} color1="#B9C85E" color2="#9FB350" opacity1={0.85} opacity2={0.85} />
+                  <EsferaDoble size={108} color1="var(--color-emova-primary)" color2="var(--color-emova-tertiary)" opacity1={0.85} opacity2={0.85} />
                 </motion.div>
               </div>
             </div>
@@ -187,12 +187,12 @@ export default function Method() {
                   transition={{ duration: 1.1, ease: "easeOut" }}
                 >
                   <div className="flex items-center gap-2 mb-2">
-                    <span className="inline-block w-3 h-3 rounded-full bg-[#B9C85E]" />
-                    <span className="text-[#B9C85E] font-medium text-sm tracking-wide">Fase 2</span>
+                    <span className="inline-block w-3 h-3 rounded-full bg-emova-primary" />
+                    <span className="text-emova-primary font-medium text-sm tracking-wide">Fase 2</span>
                   </div>
-                  <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-[#B9C85E] mb-4">Diseño Experiencial Personalizado</h2>
+                  <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-emova-primary mb-4">Diseño Experiencial Personalizado</h2>
                   <p className="text-sm sm:text-base text-gray-700 mb-1">Creamos experiencias multisensoriales específicas para los patrones emocionales de tu equipo.</p>
-                  <p className="text-xs sm:text-sm font-semibold text-[#1f1f1fff] mb-1">¿Qué ganas?</p>
+                  <p className="text-xs sm:text-sm font-semibold text-emova-grey mb-1">¿Qué ganas?</p>
                   <p className="text-sm sm:text-base text-gray-700">Un programa único que habla el "idioma emocional" de tu organización, no una receta genérica.</p>
                 </motion.div>
               </div>
@@ -204,7 +204,7 @@ export default function Method() {
                   viewport={{ once: true, amount: 0.6 }}
                   transition={{ duration: 1.1, ease: "easeOut" }}
                 >
-                  <EsferasFase2 size1={72} size2={144} color="#B9C85E" />
+                  <EsferasFase2 size1={72} size2={144} color1="var(--color-emova-secondary)" color2="var(--color-emova-tertiary)"/>
                 </motion.div>
               </div>
             </div>
@@ -240,12 +240,12 @@ export default function Method() {
                   transition={{ duration: 1.1, ease: "easeOut" }}
                 >
                   <div className="flex items-center gap-2 mb-2">
-                    <span className="inline-block w-3 h-3 rounded-full bg-[#B9C85E]" />
-                    <span className="text-[#B9C85E] font-medium text-sm tracking-wide">Fase 3</span>
+                    <span className="inline-block w-3 h-3 rounded-full bg-emova-primary" />
+                    <span className="text-emova-primary font-medium text-sm tracking-wide">Fase 3</span>
                   </div>
-                  <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-[#B9C85E] mb-4">Activación Neuroplástica</h2>
+                  <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-emova-primary mb-4">Activación Neuroplástica</h2>
                   <p className="text-sm sm:text-base text-gray-700 mb-1">Implementamos dinámicas que reorganizan el cerebro para crear nuevos hábitos relacionales.</p>
-                  <p className="text-xs sm:text-sm font-semibold text-[#1f1f1fff] mb-1">¿Qué ganas?</p>
+                  <p className="text-xs sm:text-sm font-semibold text-emova-grey mb-1">¿Qué ganas?</p>
                   <p className="text-sm sm:text-base text-gray-700">Cambios estables y duraderos, no solo motivación temporal que se desvanece.</p>
                 </motion.div>
               </div>
@@ -257,7 +257,7 @@ export default function Method() {
                   viewport={{ once: true, amount: 0.6 }}
                   transition={{ x: { duration: 1.1, ease: "easeOut" }, rotate: { duration: 1, ease: "easeOut" }, opacity: { duration: 1.1 } }}
                 >
-                  <EsferasFase3 radius={81} sphereRadius={29} color="#B9C85E" />
+                  <EsferasFase3 radius={81} sphereRadius={29} color="var(--color-emova-primary)" />
                 </motion.div>
               </div>
             </div>
@@ -293,12 +293,12 @@ export default function Method() {
                   transition={{ duration: 1.1, ease: "easeOut" }}
                 >
                   <div className="flex items-center gap-2 mb-2">
-                    <span className="inline-block w-3 h-3 rounded-full bg-[#B9C85E]" />
-                    <span className="text-[#B9C85E] font-medium text-sm tracking-wide">Fase 4</span>
+                    <span className="inline-block w-3 h-3 rounded-full bg-emova-primary" />
+                    <span className="text-emova-primary font-medium text-sm tracking-wide">Fase 4</span>
                   </div>
-                  <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-[#B9C85E] mb-4">Consolidación Grupal</h2>
+                  <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-emova-primary mb-4">Consolidación Grupal</h2>
                   <p className="text-sm sm:text-base text-gray-700 mb-1">Los equipos practican y refuerzan las nuevas formas de relacionarse.</p>
-                  <p className="text-xs sm:text-sm font-semibold text-[#1f1f1fff] mb-1">¿Qué ganas?</p>
+                  <p className="text-xs sm:text-sm font-semibold text-emova-grey mb-1">¿Qué ganas?</p>
                   <p className="text-sm sm:text-base text-gray-700">La transformación se vuelve cultura organizacional, no esfuerzo individual que se pierde.</p>
                 </motion.div>
               </div>
@@ -310,7 +310,7 @@ export default function Method() {
                   viewport={{ once: true, amount: 0.6 }}
                   transition={{ duration: 1.1, ease: "easeOut" }}
                 >
-                  <EsferasFase4 sphereRadius={29} color="#B9C85E" />
+                  <EsferasFase4 sphereRadius={29} color="var(--color-emova-primary)" />
                 </motion.div>
               </div>
             </div>
@@ -346,12 +346,12 @@ export default function Method() {
                   transition={{ duration: 1.1, ease: "easeOut" }}
                 >
                   <div className="flex items-center gap-2 mb-2">
-                    <span className="inline-block w-3 h-3 rounded-full bg-[#B9C85E]" />
-                    <span className="text-[#B9C85E] font-medium text-sm tracking-wide">Fase 5</span>
+                    <span className="inline-block w-3 h-3 rounded-full bg-emova-primary" />
+                    <span className="text-emova-primary font-medium text-sm tracking-wide">Fase 5</span>
                   </div>
-                  <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-[#B9C85E] mb-4">Seguimiento transformacional</h2>
+                  <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-emova-primary mb-4">Seguimiento transformacional</h2>
                   <p className="text-sm sm:text-base text-gray-700 mb-1">Medimos el progreso con indicadores específicos de clima laboral y retención.</p>
-                  <p className="text-xs sm:text-sm font-semibold text-[#1f1f1fff] mb-1">¿Qué ganas?</p>
+                  <p className="text-xs sm:text-sm font-semibold text-emova-grey mb-1">¿Qué ganas?</p>
                   <p className="text-sm sm:text-base text-gray-700">Evidencia clara del ROI y garantía de cambios sostenidos.</p>
                 </motion.div>
               </div>
@@ -363,7 +363,7 @@ export default function Method() {
                   viewport={{ once: true, amount: 0.6 }}
                   transition={{ duration: 1, ease: "easeOut" }}
                 >
-                  <EsferasFase5 sphereRadius={29} color1="#9FB350" color2="#d6e288ff" />
+                  <EsferasFase5 sphereRadius={29} color1="var(--color-emova-secondary)" color2="var(--color-emova-tertiary)" />
                 </motion.div>
               </div>
             </div>
@@ -372,7 +372,7 @@ export default function Method() {
       </section>
 
       {/* Sección Los Autores */}
-      <section className="w-full flex flex-col items-center justify-center bg-[#F9FAFB] py-20">
+      <section className="w-full flex flex-col items-center justify-center bg-white py-20">
         <div className="flex flex-col md:flex-row items-center justify-center gap-6 md:gap-10 lg:gap-16 w-full max-w-5xl mx-auto px-4 sm:px-6 md:px-12 lg:px-8">
           {/* Autor 1 */}
           <div className="flex flex-col items-center w-full md:w-1/2">
@@ -387,10 +387,10 @@ export default function Method() {
                 transition={{ duration: 1, ease: "easeOut" }}
               >
                 <svg className="w-24 h-24 sm:w-32 sm:h-32 md:w-56 md:h-56 lg:w-56 lg:h-56 xl:w-64 xl:h-64" viewBox="0 0 295 295" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M73.4752 0L80.0692 28.2597C84.5436 47.335 99.6154 62.4068 118.691 66.8813L146.95 73.4752L118.691 80.0692C99.6154 84.5436 84.5436 99.6155 80.0692 118.691L73.4752 146.95L66.8813 118.691C62.4068 99.6155 47.335 84.5436 28.2597 80.0692L0 73.4752L28.2597 66.8813C47.335 62.4068 62.4068 47.335 66.8813 28.2597L73.4752 0Z" fill="#d6e288ff"/>
-                  <path d="M220.661 0L227.255 28.2597C231.73 47.335 246.801 62.4068 265.877 66.8813L294.136 73.4752L265.877 80.0692C246.801 84.5436 231.73 99.6155 227.255 118.691L220.661 146.95L214.067 118.691C209.593 99.6155 194.521 84.5436 175.446 80.0692L147.186 73.4752L175.446 66.8813C194.521 62.4068 209.593 47.335 214.067 28.2597L220.661 0Z" fill="#d6e288ff"/>
-                  <path d="M73.4752 147.186L80.0692 175.446C84.5436 194.521 99.6154 209.593 118.691 214.067L146.95 220.661L118.691 227.255C99.6154 231.73 84.5436 246.801 80.0692 265.877L73.4752 294.136L66.8813 265.877C62.4068 246.801 47.335 231.73 28.2597 227.255L0 220.661L28.2597 214.067C47.335 209.593 62.4068 194.521 66.8813 175.446L73.4752 147.186Z" fill="#d6e288ff"/>
-                  <path d="M220.661 147.186L227.255 175.446C231.73 194.521 246.801 209.593 265.877 214.067L294.136 220.661L265.877 227.255C246.801 231.73 231.73 246.801 227.255 265.877L220.661 294.136L214.067 265.877C209.593 246.801 194.521 231.73 175.446 227.255L147.186 220.661L175.446 214.067C194.521 209.593 209.593 194.521 214.067 175.446L220.661 147.186Z" fill="#d6e288ff"/>
+                  <path d="M73.4752 0L80.0692 28.2597C84.5436 47.335 99.6154 62.4068 118.691 66.8813L146.95 73.4752L118.691 80.0692C99.6154 84.5436 84.5436 99.6155 80.0692 118.691L73.4752 146.95L66.8813 118.691C62.4068 99.6155 47.335 84.5436 28.2597 80.0692L0 73.4752L28.2597 66.8813C47.335 62.4068 62.4068 47.335 66.8813 28.2597L73.4752 0Z" fill="var(--color-emova-tertiary)"/>
+                  <path d="M220.661 0L227.255 28.2597C231.73 47.335 246.801 62.4068 265.877 66.8813L294.136 73.4752L265.877 80.0692C246.801 84.5436 231.73 99.6155 227.255 118.691L220.661 146.95L214.067 118.691C209.593 99.6155 194.521 84.5436 175.446 80.0692L147.186 73.4752L175.446 66.8813C194.521 62.4068 209.593 47.335 214.067 28.2597L220.661 0Z" fill="var(--color-emova-tertiary)"/>
+                  <path d="M73.4752 147.186L80.0692 175.446C84.5436 194.521 99.6154 209.593 118.691 214.067L146.95 220.661L118.691 227.255C99.6154 231.73 84.5436 246.801 80.0692 265.877L73.4752 294.136L66.8813 265.877C62.4068 246.801 47.335 231.73 28.2597 227.255L0 220.661L28.2597 214.067C47.335 209.593 62.4068 194.521 66.8813 175.446L73.4752 147.186Z" fill="var(--color-emova-tertiary)"/>
+                  <path d="M220.661 147.186L227.255 175.446C231.73 194.521 246.801 209.593 265.877 214.067L294.136 220.661L265.877 227.255C246.801 231.73 231.73 246.801 227.255 265.877L220.661 294.136L214.067 265.877C209.593 246.801 194.521 231.73 175.446 227.255L147.186 220.661L175.446 214.067C194.521 209.593 209.593 194.521 214.067 175.446L220.661 147.186Z" fill="var(--color-emova-tertiary)"/>
                 </svg>
               </motion.div>
               <div className="relative z-10">
@@ -424,7 +424,7 @@ export default function Method() {
           {/* Flecha decorativa entre autores - horizontal para desktop */}
           <div className="hidden md:flex items-center justify-center h-full">
             <motion.span
-              className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-[#303030ff]"
+              className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-emova-grey"
               initial={{ x: -80, opacity: 0 }}
               whileInView={{ x: 0, opacity: 1 }}
               viewport={{ once: true, amount: 0.6 }}
@@ -436,7 +436,7 @@ export default function Method() {
           {/* Flecha decorativa entre autores - vertical para móvil/tablet */}
           <div className="flex md:hidden items-center justify-center w-full my-4">
             <motion.span
-              className="text-4xl text-[#303030ff]"
+              className="text-4xl text-emova-grey"
               initial={{ y: -40, opacity: 0 }}
               whileInView={{ y: 0, opacity: 1 }}
               viewport={{ once: true, amount: 0.6 }}
@@ -499,7 +499,7 @@ export default function Method() {
           transition={{ duration: 0.6, delay: 0.4 }}
           className="mb-4 relative z-20"
         >
-          <Link href="/nosotros" className="bg-[#9FB350] hover:bg-[#d6e288ff] text-white font-libre font-bold px-4 sm:px-6 md:px-8 py-2 sm:py-3 md:py-4 rounded-full text-sm sm:text-base md:text-lg transition-colors flex items-center gap-2 mx-auto">
+          <Link href="/nosotros" className="bg-emova-secondary hover:bg-emova-tertiary text-white font-libre font-bold px-4 sm:px-6 md:px-8 py-2 sm:py-3 md:py-4 rounded-full text-sm sm:text-base md:text-lg transition-colors flex items-center gap-2 mx-auto">
             Descubre cómo lo hacemos realidad
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-4 h-4 sm:w-5 sm:h-5">
               <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />

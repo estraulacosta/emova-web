@@ -178,7 +178,7 @@ export default function HeroEvidencia() {
             >
               <div className="relative w-96 h-96 md:w-96 md:h-96 lg:w-[500px] lg:h-[500px] md:-mr-20 lg:-mr-32">
                 {/* Green Circle */}
-                <div className="absolute inset-0 rounded-full bg-emova-primary shadow-2xl overflow-visible flex items-center justify-center">
+                <div className="absolute inset-0 rounded-full bg-emova-tertiary shadow-2xl overflow-visible flex items-center justify-center">
                   <img
                     src="/assets/Periodico.png"
                     alt="Periódico"

@@ -32,7 +32,9 @@ export default function Footer() {
               <ul className="space-y-1 text-white/90">
                 <li><Link href="/" className="hover:underline">Home</Link></li>
                 <li><Link href="/nosotros" className="hover:underline">Nosotros</Link></li>
+                <li><Link href="/evidencia" className="hover:underline">Evidencia</Link></li>
                 <li><Link href="/metodo" className="hover:underline">Método</Link></li>
+                <li><Link href="/diagnostico" className="hover:underline">Diagnóstico</Link></li>
                 <li><Link href="/contacto" className="hover:underline">Contacto</Link></li>
               </ul>
             </div>
@@ -53,8 +55,8 @@ export default function Footer() {
               <h4 className="font-playfair font-bold mb-2 text-lg">Servicios</h4>
               <ul className="space-y-1 text-white/90">
                 <li><Link href="/metodo" className="hover:underline">Métodos</Link></li>
-                <li><a href="#evidencia" className="hover:underline">Evidencia</a></li>
-                <li><a href="#diagnostico" className="hover:underline">Diagnóstico</a></li>
+                <li><Link href="/evidencia" className="hover:underline">Evidencia</Link></li>
+                <li><Link href="/diagnostico" className="hover:underline">Diagnóstico</Link></li>
               </ul>
             </div>
 

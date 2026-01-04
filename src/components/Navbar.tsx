@@ -11,7 +11,7 @@ const navLinks = [
   { name: "Nosotros", href: "/nosotros" },
   { name: "Evidencia", href: "#evidencia" },
   { name: "Método", href: "/metodo" },
-  { name: "Diagnóstico", href: "#diagnostico" },
+  { name: "Diagnóstico", href: "/diagnostico" },
 ];
 
 export default function Navbar() {

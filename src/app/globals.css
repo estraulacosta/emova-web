@@ -12,6 +12,68 @@
   --font-noto: var(--font-noto);
 }
 
+/* Sistema de Grid Responsivo */
+/* Móvil: 3 columnas | Tablet: 5 columnas | Desktop: 12 columnas */
+.grid-sistema {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(3, 1fr); /* Móvil: 3 columnas */
+}
+
+@media (min-width: 768px) {
+  .grid-sistema {
+    grid-template-columns: repeat(5, 1fr); /* Tablet: 5 columnas */
+  }
+}
+
+@media (min-width: 1024px) {
+  .grid-sistema {
+    grid-template-columns: repeat(12, 1fr); /* Desktop: 12 columnas */
+  }
+}
+
+/* Utilidades para span de columnas - Móvil (3 cols) */
+.col-span-m-1 { grid-column: span 1 / span 1; }
+.col-span-m-2 { grid-column: span 2 / span 2; }
+.col-span-m-3 { grid-column: span 3 / span 3; }
+
+/* Utilidades para span de columnas - Tablet (5 cols) */
+@media (min-width: 768px) {
+  .col-span-t-1 { grid-column: span 1 / span 1; }
+  .col-span-t-2 { grid-column: span 2 / span 2; }
+  .col-span-t-3 { grid-column: span 3 / span 3; }
+  .col-span-t-4 { grid-column: span 4 / span 4; }
+  .col-span-t-5 { grid-column: span 5 / span 5; }
+}
+
+/* Utilidades para span de columnas - Desktop (12 cols) */
+@media (min-width: 1024px) {
+  .col-span-d-1 { grid-column: span 1 / span 1; }
+  .col-span-d-2 { grid-column: span 2 / span 2; }
+  .col-span-d-3 { grid-column: span 3 / span 3; }
+  .col-span-d-4 { grid-column: span 4 / span 4; }
+  .col-span-d-5 { grid-column: span 5 / span 5; }
+  .col-span-d-6 { grid-column: span 6 / span 6; }
+  .col-span-d-7 { grid-column: span 7 / span 7; }
+  .col-span-d-8 { grid-column: span 8 / span 8; }
+  .col-span-d-9 { grid-column: span 9 / span 9; }
+  .col-span-d-10 { grid-column: span 10 / span 10; }
+  .col-span-d-11 { grid-column: span 11 / span 11; }
+  .col-span-d-12 { grid-column: span 12 / span 12; }
+}
+
+/* Utilidades para start de columnas - Desktop */
+@media (min-width: 1024px) {
+  .col-start-d-1 { grid-column-start: 1; }
+  .col-start-d-2 { grid-column-start: 2; }
+  .col-start-d-3 { grid-column-start: 3; }
+  .col-start-d-4 { grid-column-start: 4; }
+  .col-start-d-5 { grid-column-start: 5; }
+  .col-start-d-6 { grid-column-start: 6; }
+  .col-start-d-7 { grid-column-start: 7; }
+  .col-start-d-8 { grid-column-start: 8; }
+}
+
 
 :root {
   --background: #ffffff;

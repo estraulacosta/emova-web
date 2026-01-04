@@ -33,7 +33,7 @@ export default function ModeloSection() {
               className="relative"
             >
               {/* Green Circle */}
-              <div className="w-48 h-48 md:w-56 md:h-56 lg:w-64 lg:h-64 rounded-full bg-emova-tertiary flex items-center justify-center shadow-lg">
+              <div className="w-48 h-48 md:w-56 md:h-56 lg:w-64 lg:h-64 rounded-full bg-emova-primary flex items-center justify-center shadow-lg">
                 <img
                   src="/assets/cerebro-arriba.png"
                   alt="Cerebro"
@@ -82,8 +82,8 @@ export default function ModeloSection() {
               className="relative"
             >
               {/* Large Green Circle with overflow effect */}
-              <div className="relative w-75 h-75 md:w-96 md:h-96 lg:w-[500px] lg:h-[500px] md:-mr-20 lg:-mr-32">
-                <div className="absolute inset-0 rounded-full bg-emova-tertiary shadow-2xl overflow-visible flex items-center justify-center" style={{ transform: 'translateX(-10%)' }}>
+              <div className="relative w-90 h-90 md:w-96 md:h-96 lg:w-[500px] lg:h-[500px] md:-mr-20 lg:-mr-32">
+                <div className="absolute inset-0 rounded-full bg-emova-primary shadow-2xl overflow-visible flex items-center justify-center" style={{ transform: 'translateX(-15%)' }}>
                   {/* Green darker ball inside - positioned between fingers */}
                   <div 
                     className="absolute w-16 h-16 md:w-20 md:h-20 lg:w-30 lg:h-30 rounded-full bg-emova-secondary shadow-lg z-20" 
@@ -113,7 +113,7 @@ export default function ModeloSection() {
               className="relative"
             >
               {/* Container with overflow effect */}
-              <div className="relative w-80 h-80 md:w-96 md:h-96 lg:w-[550px] lg:h-[550px] md:-ml-20 lg:-ml-32">
+              <div className="relative w-80 h-80 md:w-96 md:h-96 lg:w-[450px] lg:h-[450px] md:-ml-20 lg:-ml-32">
                 {/* Dotted Border Box - Only around the small circle */}
                 <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
                   <div className="relative inline-block p-2">
@@ -135,7 +135,7 @@ export default function ModeloSection() {
                     </svg>
                     
                     {/* Small green circle with darker center */}
-                    <div className="relative z-10 w-20 h-20 md:w-24 md:h-24 lg:w-59 lg:h-59 rounded-full bg-emova-tertiary flex items-center justify-center shadow-lg" style={{ transform: 'translateX(-12%) translateY(45%)' }}>
+                    <div className="relative z-10 w-20 h-20 md:w-24 md:h-24 lg:w-59 lg:h-59 rounded-full bg-emova-primary flex items-center justify-center shadow-lg" style={{ transform: 'translateX(-12%) translateY(45%)' }}>
                       <div className="w-10 h-10 md:w-12 md:h-12 lg:w-30 lg:h-30 rounded-full bg-emova-secondary" style={{ transform: 'translateX(8.5%) translateY(1%)' }}></div>
                     </div>
                   </div>

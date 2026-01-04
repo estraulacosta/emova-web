@@ -5,29 +5,29 @@ import { motion } from "framer-motion";
 export default function DecorativeRules() {
   return (
     <div className="w-full py-12 md:py-16 lg:py-20 bg-[#F5F5F5] overflow-hidden">
-      <div className="relative w-full">
-        <div className="relative w-full" style={{ minHeight: '300px' }}>
+      <div className="container mx-auto px-4 md:px-6 max-w-6xl">
+        <div className="relative w-full" style={{ minHeight: '250px' }}>
           
-          {/* SVG con las líneas decorativas en L - Posicionadas a la derecha */}
+          {/* SVG único con ambas líneas */}
           <motion.div
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="absolute right-0 top-0 w-full max-w-sm md:max-w-md lg:max-w-lg"
+            className="relative w-full"
           >
             <svg 
               width="100%" 
-              height="280" 
-              viewBox="0 0 350 220" 
+              height="250" 
+              viewBox="0 0 1200 250" 
               fill="none" 
               xmlns="http://www.w3.org/2000/svg"
               className="w-full h-auto"
-              preserveAspectRatio="xMaxYMin meet"
+              preserveAspectRatio="xMidYMid meet"
             >
-              {/* Primera línea - Verde primario (B9C85E) - Más adelante */}
+              {/* Primera línea - Verde primario */}
               <motion.path
-                d="M110 70 V10 H400"
+                d="M50 200 V100 H400"
                 stroke="#B9C85E"
                 strokeWidth="2"
                 strokeDasharray="4 4"
@@ -39,12 +39,11 @@ export default function DecorativeRules() {
                   pathLength: { duration: 1.5, delay: 0.5, ease: "easeInOut" },
                   opacity: { duration: 0.3, delay: 0.5 }
                 }}
-                style={{transform: "translateX(180px) translateY(65px)"}}
               />
               
-              {/* Segunda línea - Verde secundario (9FB350) - Más atrás */}
+              {/* Segunda línea - Verde secundario */}
               <motion.path
-                d="M10 140 V80 H340"
+                d="M800 200 V50 H1150"
                 stroke="#9FB350"
                 strokeWidth="2"
                 strokeDasharray="4 4"
@@ -56,41 +55,26 @@ export default function DecorativeRules() {
                   pathLength: { duration: 1.5, delay: 0.7, ease: "easeInOut" },
                   opacity: { duration: 0.3, delay: 0.7 }
                 }}
-                style={{transform: "translateX(250px) translateY(10px)"}}
               />
             </svg>
           </motion.div>
 
-          {/* Contenido de texto - Centrado */}
-          <div className="container mx-auto px-4 md:px-6 max-w-6xl relative">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.8, delay: 0.9 }}
-              className="grid-sistema items-center pt-8 md:pt-12"
-            >
-              <div className="col-span-m-3 col-span-t-5 col-span-d-12 text-center">
-                <h3 className="text-xl md:text-2xl lg:text-4xl font-playfair font-bold text-emova-primary mb-6 md:mb-8">
-                  ¿Cómo puedes arreglar lo que no puedes medir?
-                </h3>
-              </div>
-            </motion.div>
-          </div>
-
-          {/* Imagen de la regla - Ancho completo */}
+          {/* Contenido de texto central */}
           <motion.div
-            initial={{ opacity: 0, y: 30 }}
+            initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.8, delay: 1.1 }}
-            className="relative w-full mt-8 md:mt-12"
+            transition={{ duration: 0.8, delay: 0.9 }}
+            className="absolute inset-0 flex items-center justify-center text-center px-4"
           >
-            <img 
-              src="/assets/Regla.png" 
-              alt="Regla de medición" 
-              className="w-full h-auto object-cover drop-shadow-lg"
-            />
+            <div className="max-w-3xl">
+              <h3 className="text-2xl md:text-3xl lg:text-4xl font-playfair font-bold text-emova-grey mb-4">
+                {/* Agrega aquí el título */}
+              </h3>
+              <p className="text-base md:text-lg lg:text-xl text-emova-grey font-noto">
+                {/* Agrega aquí el texto descriptivo */}
+              </p>
+            </div>
           </motion.div>
 
         </div>

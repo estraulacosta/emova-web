@@ -113,10 +113,10 @@ export default function Hero() {
               <TypewriterText
                 parts={[
                   { text: "En la era de la IA, " },
-                  { text: "lo humano es ", className: "text-emova-tertiary" },
+                  { text: "lo humano es ", className: "text-emova-primary" },
                   { text: "tu única\n" },
                   { text: "ventaja competitiva " },
-                  { text: "irreemplazable", className: "text-emova-tertiary" },
+                  { text: "irreemplazable", className: "text-emova-primary" },
                 ]}
                 delay={0.3}
               />

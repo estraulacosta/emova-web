@@ -19,7 +19,7 @@ export default function ConvergenciaSection() {
               className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-playfair font-bold text-white mb-0"
             >
               La convergencia científica{" "}
-              <span className="text-emova-tertiary">apunta a una realidad</span>
+              <span className="text-emova-secondary">apunta a una realidad</span>
             </motion.h2>
           </div>
 

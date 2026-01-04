@@ -48,7 +48,7 @@ export default function Paradox() {
                 whileInView={{ rotate: 360 }}
                 viewport={{ once: true }}
                 transition={{ duration: 1.2, delay: 0.2, ease: "easeOut" }}
-                className="w-48 h-48 sm:w-56 sm:h-56 md:w-64 md:h-64 lg:w-72 lg:h-72 rounded-full bg-emova-tertiary flex items-center justify-center shadow-lgz-0 -ml-1 sm:-ml-2 md:-ml-3"
+                className="w-48 h-48 sm:w-56 sm:h-56 md:w-64 md:h-64 lg:w-72 lg:h-72 rounded-full bg-emova-primary z-0 -ml-1 sm:-ml-2 md:-ml-3"
               ></motion.div>
             </div>
           </motion.div>

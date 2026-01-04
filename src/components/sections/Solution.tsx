@@ -43,7 +43,7 @@ export default function Solution() {
 
                 {/* Content */}
                 <div className="relative z-10 pt-0 min-[375px]:pt-3 sm:pt-6 md:pt-12 pb-10 px-6 sm:px-8 md:px-12 text-center max-w-3xl mx-auto">
-                  <h2 className="text-base sm:text-xl md:text-6xl font-playfair font-bold mb-2 sm:mb-3 md:mb-10 text-emova-primary">
+                  <h2 className="text-base sm:text-xl md:text-6xl font-playfair font-bold mb-2 sm:mb-3 md:mb-10 text-emova-secondary">
                     Solución
                   </h2>
                   

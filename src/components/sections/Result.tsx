@@ -12,7 +12,7 @@ export default function Result() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="text-4xl md:text-6xl font-playfair font-bold text-white mb-8"
+          className="text-4xl md:text-6xl font-playfair font-bold text-emova-tertiary mb-8"
         >
           Resultado:
         </motion.h2>

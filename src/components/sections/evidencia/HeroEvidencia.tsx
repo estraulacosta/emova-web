@@ -23,7 +23,7 @@ export default function HeroEvidencia() {
   return (
     <>
       {/* Header Section - Primary Color Background */}
-      <section className="bg-emova-primary pt-32 pb-16">
+      <section className="bg-emova-primary pt-32 pb-9">
         <div className="container mx-auto px-4 md:px-6">
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
@@ -176,13 +176,13 @@ export default function HeroEvidencia() {
               viewport={{ once: true }}
               className="relative flex justify-center md:justify-end items-center overflow-visible"
             >
-              <div className="relative w-96 h-96 md:w-96 md:h-96 lg:w-[500px] lg:h-[500px] md:-mr-20 lg:-mr-32">
+              <div className="relative w-[310px] h-[310px] md:w-90 md:h-89 lg:w-[450px] lg:h-[450px]">
                 {/* Green Circle */}
-                <div className="absolute inset-0 rounded-full bg-emova-tertiary shadow-2xl overflow-visible flex items-center justify-center">
+                <div className="absolute inset-0 rounded-full w-full h-full md:w-90 md:h-89 lg:w-[450px] lg:h-[450px] bg-emova-tertiary shadow-2xl overflow-visible flex items-center justify-center">
                   <img
                     src="/assets/Periodico.png"
                     alt="Periódico"
-                    className="w-[100%] h-[100%] object-contain"
+                    className="relative w-[85%] h-[85%] md:w-[110%] md:h-[110%] lg:w-[500px] lg:h-[500px] left-14 top-0 md:left-30 md:top-0 lg:left-31 lg:top-0 object-contain"
                     style={{ transform: 'translateX(15%)' }}
                   />
                 </div>

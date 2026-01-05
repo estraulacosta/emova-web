@@ -135,64 +135,53 @@ export default function DecorativeRules() {
           <svg className="absolute inset-0 w-full h-full" style={{ pointerEvents: 'none' }}>
             {/* Línea horizontal desde círculos izquierda hasta media luna */}
             <motion.line
-              x1="320" y1="469" x2="732" y2="469"
+              x1="345" y1="469" x2="712" y2="469"
               stroke="#575756"
               strokeWidth="2"
-              strokeDasharray="10 10"
+              strokeDasharray="6 8"
               strokeLinecap="round"
-              initial={{ pathLength: 0 }}
-              whileInView={{ pathLength: 1 }}
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
               viewport={{ once: true }}
-              transition={{ duration: 1.5, delay: 0.3 }}
+              transition={{ duration: 0.6, delay: 0.3 }}
             />
 
-            {/* Línea desde media luna hacia derecha y bajando */}
+            {/* Línea desde media luna hacia derecha, bajando y conectando con círculo de Impacto */}
             <motion.path
-              d="M886 469 L1340 469 L1340 1146"
+              d="M896 469 L1280 469 Q1320 469 1320 509 L1320 1106 Q1320 1146 1280 1146 L980 1146"
               stroke="#575756"
               strokeWidth="2"
-              strokeDasharray="10 10"
+              strokeDasharray="6 8"
               strokeLinecap="round"
               fill="none"
               strokeLinejoin="round"
-              initial={{ pathLength: 0 }}
-              whileInView={{ pathLength: 1 }}
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
               viewport={{ once: true }}
-              transition={{ duration: 2, delay: 0.5 }}
+              transition={{ duration: 0.6, delay: 0.5 }}
             />
 
-            {/* Línea horizontal conectando círculos inferiores con círculo derecha */}
-            <motion.line
-              x1="550" y1="1146" x2="962" y2="1146"
+            {/* Línea horizontal conectando círculos inferiores con círculo derecha y bajando */}
+            <motion.path
+              d="M 90 1146 L 360 1146 M 580 1146 L 920 1146 M 90 1146 L 90 1720"
               stroke="#575756"
               strokeWidth="2"
-              strokeDasharray="10 10"
+              strokeDasharray="6 8"
               strokeLinecap="round"
-              initial={{ pathLength: 0 }}
-              whileInView={{ pathLength: 1 }}
+              fill="none"
+              strokeLinejoin="round"
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
               viewport={{ once: true }}
-              transition={{ duration: 1.5, delay: 0.7 }}
-            />
-
-            {/* Línea vertical izquierda con flecha hacia abajo */}
-            <motion.line
-              x1="60" y1="400" x2="60" y2="1650"
-              stroke="#575756"
-              strokeWidth="2"
-              strokeDasharray="10 10"
-              strokeLinecap="round"
-              initial={{ pathLength: 0 }}
-              whileInView={{ pathLength: 1 }}
-              viewport={{ once: true }}
-              transition={{ duration: 2.5, delay: 0.4 }}
+              transition={{ duration: 0.6, delay: 0.7 }}
             />
             <motion.polygon
-              points="60,1660 53,1645 67,1645"
+              points="90,1730 83,1715 97,1715"
               fill="#575756"
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.3, delay: 2.9 }}
+              transition={{ duration: 0.3, delay: 1.0 }}
             />
 
             <motion.circle

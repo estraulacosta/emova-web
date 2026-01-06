@@ -2,9 +2,9 @@
 @import "tailwindcss";
 
 @theme {
-  --color-emova-primary: #B9C85E; 
+  --color-emova-primary: #B9C85E;
   --color-emova-secondary: #575756;
-  --color-emova-tertiary: #9FB350;
+  --color-emova-tertiary:#575756;
   --color-emova-grey: #575756;
   --color-emova-white: #FFFFFF;
 

@@ -31,7 +31,8 @@ export default function Method() {
   return (
     <>
       {/* Header Section - Primary Color Background */}
-      <section className="bg-emova-primary pt-40 pb-10">
+      <section className="bg-emova-primary pt-40
+       pb-10">
         <div className="container mx-auto px-4 md:px-6">
           <motion.h1
             initial={{ opacity: 0, y: 20 }}

@@ -58,8 +58,7 @@ export default function HeroNosotros() {
               {/* Person with Green Circle - Left side */}
               <motion.div
                 initial={{ opacity: 0, x: -50 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true }}
+                animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.8 }}
                 className="relative flex justify-center items-center min-h-[300px] md:min-h-[350px] lg:min-h-[400px]"
               >
@@ -67,8 +66,7 @@ export default function HeroNosotros() {
                 <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[200px] h-[200px] md:w-[300px] md:h-[300px] lg:w-[350px] lg:h-[350px]">
                   <motion.div
                     initial={{ scale: 0.8, opacity: 0 }}
-                    whileInView={{ scale: 1, opacity: 1 }}
-                    viewport={{ once: true }}
+                    animate={{ scale: 1, opacity: 1 }}
                     transition={{ duration: 0.8, delay: 0.2 }}
                     className="w-full h-full rounded-full bg-emova-tertiary"
                   />
@@ -77,8 +75,7 @@ export default function HeroNosotros() {
                 {/* Person Image */}
                 <motion.div
                   initial={{ opacity: 0, y: 30 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
+                  animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.8, delay: 0.4 }}
                   className="relative z-10"
                 >
@@ -93,8 +90,7 @@ export default function HeroNosotros() {
               {/* Title on right side - In white space */}
               <motion.div
                 initial={{ opacity: 0, x: 50 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true }}
+                animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.8, delay: 0.3 }}
                 className="relative z-10 px-4 md:px-0"
               >
@@ -109,8 +105,7 @@ export default function HeroNosotros() {
             {/* Text content - Inside the big green circle at bottom */}
             <motion.div
               initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
+              animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.5 }}
               className="relative z-20 max-w-sm md:max-w-2xl lg:max-w-3xl mx-auto text-left space-y-3 md:space-y-5 px-6 md:px-8 lg:px-6 pt-16 md:pt-10 lg:pt-5 pb-4 md:pb-0 mt-0 md:mt-0 lg:mt-0 top-22 md:top-20 lg:top-32 align-middle"
             >
@@ -140,13 +135,13 @@ export default function HeroNosotros() {
             {/* Arcos decorativos */}
             <div className="absolute left-2 md:left-0 lg:left-0 top-30 md:top-1 lg:top-1 w-20 md:w-32 lg:w-48 pointer-events-none z-0" style={{ transform: 'translateX(-25%)' }}>
               <svg viewBox="0 0 245 489" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M242.362 404.193C201.684 403.763 161.152 387.934 130.27 356.748C129.224 355.691 128.198 354.623 127.187 353.541C96.8265 321.157 82.4643 279.282 84.0462 237.91C85.5407 198.738 101.33 160.024 131.383 130.265C132.132 129.523 132.891 128.802 133.651 128.08C164.534 98.6572 204.23 83.9524 243.936 83.9228L244.348 0.000210577C183.161 -0.0705846 121.949 22.7289 74.6 68.4465C73.8459 69.173 73.0815 69.8892 72.3324 70.631C25.8138 116.695 1.71343 176.839 0.0878923 237.492C-1.59442 300.346 20.8727 363.747 67.548 412.597C68.569 413.669 69.5901 414.741 70.6368 415.798C117.829 463.456 179.796 487.58 241.95 488.116L242.362 404.193Z" fill="#E8F5CB"/>
+                <path d="M242.362 404.193C201.684 403.763 161.152 387.934 130.27 356.748C129.224 355.691 128.198 354.623 127.187 353.541C96.8265 321.157 82.4643 279.282 84.0462 237.91C85.5407 198.738 101.33 160.024 131.383 130.265C132.132 129.523 132.891 128.802 133.651 128.08C164.534 98.6572 204.23 83.9524 243.936 83.9228L244.348 0.000210577C183.161 -0.0705846 121.949 22.7289 74.6 68.4465C73.8459 69.173 73.0815 69.8892 72.3324 70.631C25.8138 116.695 1.71343 176.839 0.0878923 237.492C-1.59442 300.346 20.8727 363.747 67.548 412.597C68.569 413.669 69.5901 414.741 70.6368 415.798C117.829 463.456 179.796 487.58 241.95 488.116L242.362 404.193Z" fill="var(--color-emova-secondary)"/>
               </svg>
             </div>
 
             <div className="absolute right-2 md:right-0 lg:right-0 top-30 md:top-1 lg:top-1 w-20 md:w-32 lg:w-48 pointer-events-none z-0" style={{ transform: 'translateX(25%)' }}>
               <svg viewBox="0 0 245 489" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M1.98559 404.193C42.6641 403.763 83.1956 387.934 114.078 356.748C115.124 355.691 116.15 354.623 117.161 353.541C147.522 321.157 161.884 279.282 160.302 237.91C158.807 198.738 143.018 160.024 112.965 130.265C112.216 129.523 111.457 128.802 110.697 128.08C79.8137 98.6572 40.1178 83.9524 0.412288 83.9228L2.13334e-05 0.000210577C61.1866 -0.0705846 122.399 22.7289 169.748 68.4465C170.502 69.173 171.266 69.8892 172.016 70.631C218.534 116.695 242.635 176.839 244.26 237.492C245.942 300.346 223.475 363.747 176.8 412.597C175.779 413.669 174.758 414.741 173.711 415.798C126.519 463.456 64.5523 487.58 2.39785 488.116L1.98559 404.193Z" fill="#E8F5CB"/>
+                <path d="M1.98559 404.193C42.6641 403.763 83.1956 387.934 114.078 356.748C115.124 355.691 116.15 354.623 117.161 353.541C147.522 321.157 161.884 279.282 160.302 237.91C158.807 198.738 143.018 160.024 112.965 130.265C112.216 129.523 111.457 128.802 110.697 128.08C79.8137 98.6572 40.1178 83.9524 0.412288 83.9228L2.13334e-05 0.000210577C61.1866 -0.0705846 122.399 22.7289 169.748 68.4465C170.502 69.173 171.266 69.8892 172.016 70.631C218.534 116.695 242.635 176.839 244.26 237.492C245.942 300.346 223.475 363.747 176.8 412.597C175.779 413.669 174.758 414.741 173.711 415.798C126.519 463.456 64.5523 487.58 2.39785 488.116L1.98559 404.193Z" fill="var(--color-emova-secondary)"/>
               </svg>
             </div>
 

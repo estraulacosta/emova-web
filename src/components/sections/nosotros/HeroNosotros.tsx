@@ -58,8 +58,7 @@ export default function HeroNosotros() {
               {/* Person with Green Circle - Left side */}
               <motion.div
                 initial={{ opacity: 0, x: -50 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true }}
+                animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.8 }}
                 className="relative flex justify-center items-center min-h-[300px] md:min-h-[350px] lg:min-h-[400px]"
               >
@@ -67,8 +66,7 @@ export default function HeroNosotros() {
                 <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[200px] h-[200px] md:w-[300px] md:h-[300px] lg:w-[350px] lg:h-[350px]">
                   <motion.div
                     initial={{ scale: 0.8, opacity: 0 }}
-                    whileInView={{ scale: 1, opacity: 1 }}
-                    viewport={{ once: true }}
+                    animate={{ scale: 1, opacity: 1 }}
                     transition={{ duration: 0.8, delay: 0.2 }}
                     className="w-full h-full rounded-full bg-emova-tertiary"
                   />
@@ -77,8 +75,7 @@ export default function HeroNosotros() {
                 {/* Person Image */}
                 <motion.div
                   initial={{ opacity: 0, y: 30 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
+                  animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.8, delay: 0.4 }}
                   className="relative z-10"
                 >
@@ -93,8 +90,7 @@ export default function HeroNosotros() {
               {/* Title on right side - In white space */}
               <motion.div
                 initial={{ opacity: 0, x: 50 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true }}
+                animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.8, delay: 0.3 }}
                 className="relative z-10 px-4 md:px-0"
               >
@@ -109,8 +105,7 @@ export default function HeroNosotros() {
             {/* Text content - Inside the big green circle at bottom */}
             <motion.div
               initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
+              animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.5 }}
               className="relative z-20 max-w-sm md:max-w-2xl lg:max-w-3xl mx-auto text-left space-y-3 md:space-y-5 px-6 md:px-8 lg:px-6 pt-16 md:pt-10 lg:pt-5 pb-4 md:pb-0 mt-0 md:mt-0 lg:mt-0 top-22 md:top-20 lg:top-32 align-middle"
             >

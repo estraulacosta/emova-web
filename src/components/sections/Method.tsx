@@ -3,6 +3,8 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
+import { useState, useEffect } from "react";
+import { ChevronUp } from "lucide-react";
 import EsferaDoble from "../ui/EsferaDoble";
 import EsferasFase2 from "../ui/EsferasFase2";
 import EsferasFase3 from "../ui/EsferasFase3";
@@ -11,25 +13,36 @@ import EsferasFase5 from "../ui/EsferasFase5";
 
 
 export default function Method() {
+  const [showScrollTop, setShowScrollTop] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setShowScrollTop(window.scrollY > 400);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
   return (
     <>
-      {/* Header animado */}
-      <motion.div
-        initial={{ y: -80 }}
-        animate={{ y: 0 }}
-        transition={{ duration: 0.8, ease: 'easeOut', delay: 0.8 }}
-        className="w-full bg-emova-primary flex justify-center items-center py-6 sm:py-8 md:py-12 lg:h-[220px] mt-20 sm:mt-24 md:mt-12"
-        style={{zIndex: 10, position: 'relative'}}
-      >
-        <motion.h1
-          initial={false}
-          animate={{ y: 0 }}
-          transition={{ duration: 0.8, ease: 'easeOut', delay: 0.8 }}
-          className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-playfair font-bold text-white text-center px-4 mt-[60px] sm:mt-[65px] md:mt-[65px] lg:mt-[40px]"
-        >
-          Método
-        </motion.h1>
-      </motion.div>
+      {/* Header Section - Primary Color Background */}
+      <section className="bg-emova-primary pt-40 pb-10">
+        <div className="container mx-auto px-4 md:px-6">
+          <motion.h1
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            className="text-3xl md:text-5xl lg:text-6xl font-playfair font-bold text-white text-center"
+          >
+            Método
+          </motion.h1>
+        </div>
+      </section>
       <div className="relative flex flex-col items-center justify-center min-h-[350px] sm:min-h-[450px] md:min-h-[550px] lg:min-h-[650px] xl:min-h-[700px] bg-white px-2 sm:px-4 md:mt-8 lg:mt-0">
       {/* SVG gráfico principal */}
       <div className="relative w-full flex justify-center items-center z-10 -mt-[30px] sm:-mt-[10px] md:mt-0 lg:mt-5" style={{ minHeight: 350 }}>
@@ -77,7 +90,7 @@ export default function Method() {
         animate={{ x: 0 }}
         transition={{ duration: 0.9, ease: 'easeOut', delay: 0.8 }}
         className="absolute left-[-125px] sm:left-[-85px] md:left-[-250px] lg:left-[-60px] xl:left-[-70px] top-[-5px] sm:top-[-25px] md:top-[-40px] lg:top-[-120px] xl:top-[-130px] w-[220px] sm:w-[320px] md:w-[420px] lg:w-[620px] xl:w-[700px] pointer-events-none select-none"
-        style={{ zIndex: 50 }}
+        style={{ zIndex: 10 }}
       >
         <Image
           src="/assets/Mano%20C.png"
@@ -499,7 +512,7 @@ export default function Method() {
           transition={{ duration: 0.6, delay: 0.4 }}
           className="mb-4 relative z-20"
         >
-          <Link href="/nosotros" className="bg-emova-secondary hover:bg-emova-tertiary text-white font-libre font-bold px-4 sm:px-6 md:px-8 py-2 sm:py-3 md:py-4 rounded-full text-sm sm:text-base md:text-lg transition-colors flex items-center gap-2 mx-auto">
+          <Link href="/nosotros" className="bg-emova-primary hover:bg-emova-secondary text-white font-libre font-bold px-4 sm:px-6 md:px-8 py-2 sm:py-3 md:py-4 rounded-full text-sm sm:text-base md:text-lg transition-colors flex items-center gap-2 mx-auto">
             Descubre cómo lo hacemos realidad
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-4 h-4 sm:w-5 sm:h-5">
               <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
@@ -508,6 +521,20 @@ export default function Method() {
         </motion.div>
       </div>
       </section>
+
+      {/* Scroll to Top Button */}
+      {showScrollTop && (
+        <motion.button
+          initial={{ opacity: 0, scale: 0.8 }}
+          animate={{ opacity: 1, scale: 1 }}
+          exit={{ opacity: 0, scale: 0.8 }}
+          onClick={scrollToTop}
+          className="fixed bottom-8 right-8 z-100 bg-emova-primary text-white p-4 rounded-full shadow-lg hover:bg-emova-secondary transition-all duration-300"
+          aria-label="Volver arriba"
+        >
+          <ChevronUp size={24} />
+        </motion.button>
+      )}
     </>
   );
 }

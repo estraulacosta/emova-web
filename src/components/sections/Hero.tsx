@@ -2,6 +2,8 @@
 
 import { motion, Variants } from "framer-motion";
 import Link from "next/link";
+import { useState, useEffect } from "react";
+import { ChevronUp } from "lucide-react";
 
 const TypewriterText = ({ parts, delay = 0 }: { parts: { text: string; className?: string }[]; delay?: number }) => {
   const allLetters = parts.flatMap((part) =>
@@ -90,7 +92,7 @@ const TypewriterText = ({ parts, delay = 0 }: { parts: { text: string; className
   );
 };
 
-export default function Hero() {
+function HeroContent() {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-black py-20">
       <div className="absolute inset-0 z-0">
@@ -158,5 +160,41 @@ export default function Hero() {
         </div>
       </div>
     </section>
+  );
+}
+
+export default function Hero() {
+  const [showScrollTop, setShowScrollTop] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setShowScrollTop(window.scrollY > 400);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
+  return (
+    <>
+      <HeroContent />
+      {/* Scroll to Top Button */}
+      {showScrollTop && (
+        <motion.button
+          initial={{ opacity: 0, scale: 0.8 }}
+          animate={{ opacity: 1, scale: 1 }}
+          exit={{ opacity: 0, scale: 0.8 }}
+          onClick={scrollToTop}
+          className="fixed bottom-8 right-8 z-50 bg-emova-primary text-white p-4 rounded-full shadow-lg hover:bg-emova-secondary transition-all duration-300"
+          aria-label="Volver arriba"
+        >
+          <ChevronUp size={24} />
+        </motion.button>
+      )}
+    </>
   );
 }

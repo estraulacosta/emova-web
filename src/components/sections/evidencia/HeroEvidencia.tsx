@@ -42,9 +42,8 @@ export default function HeroEvidencia() {
           {/* Main Title */}
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
+            animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
-            viewport={{ once: true }}
             className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-playfair font-bold text-emova-grey mb-4 text-center md:text-left"
           >
             La Ciencia{" "}
@@ -55,9 +54,8 @@ export default function HeroEvidencia() {
           {/* Subtitle */}
           <motion.p
             initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
+            animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            viewport={{ once: true }}
             className="text-base md:text-lg text-emova-grey/70 mb-12 md:mb-16 text-center md:text-left"
           >
             Por qué la Inteligencia Emocional es la ventaja competitiva del futuro
@@ -68,9 +66,8 @@ export default function HeroEvidencia() {
             {/* Card 1 - Harvard Business Review */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
+              animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
-              viewport={{ once: true }}
               className="bg-white p-6 md:p-8 rounded-lg"
             >
               <div className="mb-4 h-12 flex items-center">
@@ -89,9 +86,8 @@ export default function HeroEvidencia() {
             {/* Card 2 - GALLUP */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
+              animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.1 }}
-              viewport={{ once: true }}
               className="bg-white p-6 md:p-8 rounded-lg"
             >
               <div className="mb-4 h-12 flex items-center">
@@ -110,9 +106,8 @@ export default function HeroEvidencia() {
             {/* Card 3 - Daniel Goleman */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
+              animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.2 }}
-              viewport={{ once: true }}
               className="bg-white p-6 md:p-8 rounded-lg"
             >
               <div className="mb-4 h-12 flex items-center">
@@ -131,9 +126,8 @@ export default function HeroEvidencia() {
             {/* Card 4 - MIT Management */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
+              animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.3 }}
-              viewport={{ once: true }}
               className="bg-white p-6 md:p-8 rounded-lg"
             >
               <div className="mb-4 h-12 flex items-center">
@@ -151,9 +145,8 @@ export default function HeroEvidencia() {
             {/* Card 5 - OMS */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
+              animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.4 }}
-              viewport={{ once: true }}
               className="bg-white p-6 md:p-8 rounded-lg"
             >
               <div className="mb-4 h-12 flex items-center">
@@ -171,9 +164,8 @@ export default function HeroEvidencia() {
             {/* Card 6 - Circle with Newspaper Image - Coming from right */}
             <motion.div
               initial={{ opacity: 0, x: 100 }}
-              whileInView={{ opacity: 1, x: 0 }}
+              animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8, delay: 0.5 }}
-              viewport={{ once: true }}
               className="relative flex justify-center md:justify-end items-center overflow-visible"
             >
               <div className="relative w-[310px] h-[310px] md:w-90 md:h-89 lg:w-[450px] lg:h-[450px]">
@@ -182,7 +174,7 @@ export default function HeroEvidencia() {
                   <img
                     src="/assets/Periodico.png"
                     alt="Periódico"
-                    className="relative w-[85%] h-[85%] md:w-[110%] md:h-[110%] lg:w-[500px] lg:h-[500px] left-14 top-0 md:left-30 md:top-0 lg:left-31 lg:top-0 object-contain"
+                    className="relative w-[85%] h-[85%] md:w-[110%] md:h-[110%] lg:w-[500px] lg:h-[500px] left-14 top-0 md:left-10 md:top-0 lg:left-31 lg:top-0 object-contain"
                     style={{ transform: 'translateX(15%)' }}
                   />
                 </div>
@@ -199,7 +191,7 @@ export default function HeroEvidencia() {
           animate={{ opacity: 1, scale: 1 }}
           exit={{ opacity: 0, scale: 0.8 }}
           onClick={scrollToTop}
-          className="fixed bottom-8 right-8 z-50 bg-emova-primary text-white p-4 rounded-full shadow-lg hover:bg-emova-secondary transition-all duration-300"
+          className="fixed bottom-8 right-8 z-50 bg-emova-primary text-white p-4 rounded-full shadow-lg hover:bg-emova-secondary onhold:bg-emova-secondary transition-all duration-300"
           aria-label="Volver arriba"
         >
           <ChevronUp size={24} />

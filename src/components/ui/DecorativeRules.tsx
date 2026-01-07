@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 export default function DecorativeRules() {
   return (
     <>
-      <div className="w-full py-12 md:py-16 lg:py-20 bg-[#F5F5F5] overflow-hidden">
+      <div className="w-full py-12 md:py-16 lg:py-20 bg-emova-bg-grey overflow-hidden">
         <div className="relative w-full">
           <div className="relative w-full" style={{ minHeight: '300px' }}>
             
@@ -28,7 +28,8 @@ export default function DecorativeRules() {
               >
                 <motion.path
                   d="M110 70 V10 H400"
-                  stroke="#B9C85E"
+                  stroke="currentColor"
+                  className="text-emova-primary"
                   strokeWidth="2"
                   strokeDasharray="4 4"
                   fill="none"
@@ -44,7 +45,8 @@ export default function DecorativeRules() {
                 
                 <motion.path
                   d="M10 140 V80 H340"
-                  stroke="#9FB350"
+                  stroke="currentColor"
+                  className="text-emova-tertiary"
                   strokeWidth="2"
                   strokeDasharray="4 4"
                   fill="none"
@@ -94,7 +96,7 @@ export default function DecorativeRules() {
         </div>
       </div>
 
-      <div className="w-full bg-[#B9C85E] py-16 md:py-24" style={{ paddingBottom: '250px' }}>
+      <div className="w-full bg-emova-primary py-16 md:py-24" style={{ paddingBottom: '250px' }}>
         <div className="relative mx-auto" style={{ maxWidth: '1440px', minHeight: '1850px', paddingLeft: '50px', paddingRight: '50px' }}>
           
           <motion.h2
@@ -136,7 +138,8 @@ export default function DecorativeRules() {
             {/* Línea horizontal desde círculos izquierda hasta media luna */}
             <motion.line
               x1="345" y1="469" x2="712" y2="469"
-              stroke="#575756"
+              stroke="currentColor"
+              className="text-emova-grey"
               strokeWidth="2"
               strokeDasharray="6 8"
               strokeLinecap="round"
@@ -149,7 +152,8 @@ export default function DecorativeRules() {
             {/* Línea desde media luna hacia derecha, bajando y conectando con círculo de Impacto */}
             <motion.path
               d="M896 469 L1280 469 Q1320 469 1320 509 L1320 1106 Q1320 1146 1280 1146 L1150 1146"
-              stroke="#575756"
+              stroke="currentColor"
+              className="text-emova-grey"
               strokeWidth="2"
               strokeDasharray="6 8"
               strokeLinecap="round"
@@ -164,7 +168,8 @@ export default function DecorativeRules() {
             {/* Línea horizontal conectando círculos inferiores con círculo derecha y bajando */}
             <motion.path
               d="M 90 1146 L 360 1146 M 580 1146 L 920 1146 M 90 1146 Q 50 1146 50 1186 L 50 1720"
-              stroke="#575756"
+              stroke="currentColor"
+              className="text-emova-grey"
               strokeWidth="2"
               strokeDasharray="6 8"
               strokeLinecap="round"
@@ -177,7 +182,8 @@ export default function DecorativeRules() {
             />
             <motion.polygon
               points="50,1730 43,1715 57,1715"
-              fill="#575756"
+              fill="currentColor"
+              className="text-emova-grey"
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
               viewport={{ once: true }}
@@ -219,7 +225,7 @@ export default function DecorativeRules() {
               transition={{ type: "spring", stiffness: 200, delay: 0.5 }}
             >
               <circle cx="810" cy="469" r="76" fill="white"/>
-              <circle cx="850" cy="469" r="58" fill="#B9C85E"/>
+              <circle cx="850" cy="469" r="58" fill="currentColor" className="text-emova-primary"/>
             </motion.g>
 
             <motion.circle
@@ -234,7 +240,8 @@ export default function DecorativeRules() {
             <motion.circle
               cx="1038" cy="1146"
               r="31"
-              fill="#575756"
+              fill="currentColor"
+              className="text-emova-grey"
               initial={{ scale: 0 }}
               whileInView={{ scale: 1 }}
               viewport={{ once: true }}
@@ -275,7 +282,7 @@ export default function DecorativeRules() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 1.1 }}
-            className="absolute text-[#575756]"
+            className="absolute text-emova-grey"
             style={{ left: '167px', top: '614px', width: '363px' }}
           >
             <h3 className="font-bold mb-3" style={{ fontSize: '32px', lineHeight: '32px', fontFamily: 'Archivo, sans-serif' }}>
@@ -293,7 +300,7 @@ export default function DecorativeRules() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 1.2 }}
-            className="absolute text-[#575756]"
+            className="absolute text-emova-grey"
             style={{ left: '734px', top: '598px', width: '381px' }}
           >
             <h3 className="font-bold mb-3" style={{ fontSize: '32px', lineHeight: '32px', fontFamily: 'Archivo, sans-serif' }}>
@@ -311,7 +318,7 @@ export default function DecorativeRules() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 1.3 }}
-            className="absolute text-[#575756]"
+            className="absolute text-emova-grey"
             style={{ left: '392px', top: '1294px', width: '332px' }}
           >
             <h3 className="font-bold mb-3" style={{ fontSize: '32px', lineHeight: '32px', fontFamily: 'Archivo, sans-serif' }}>
@@ -329,7 +336,7 @@ export default function DecorativeRules() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 1.4 }}
-            className="absolute text-[#575756]"
+            className="absolute text-emova-grey"
             style={{ left: '965px', top: '1299px', width: '298px' }}
           >
             <h3 className="font-bold mb-3" style={{ fontSize: '32px', lineHeight: '32px', fontFamily: 'Archivo, sans-serif' }}>
@@ -365,7 +372,7 @@ export default function DecorativeRules() {
       </div>
 
       {/* Sección con burbuja final */}
-      <div className="w-full py-16 md:py-24 relative" style={{ backgroundColor: '#f7f7f7', zIndex: 10, minHeight: '800px' }}>
+      <div className="w-full py-16 md:py-24 relative bg-[#F5F5F5]" style={{ zIndex: 10, minHeight: '800px' }}>
         <div className="relative mx-auto" style={{ maxWidth: '1440px' }}>
           
           {/* SVG Burbuja de fondo */}
@@ -373,7 +380,7 @@ export default function DecorativeRules() {
             <img 
               src="/assets/burbuja_final2.svg" 
               alt="Burbuja decorativa" 
-              style={{ width: '100%', height: '100%' }}
+              style={{ width: '100%', height: '100%'}}
             />
           </div>
 
@@ -386,10 +393,10 @@ export default function DecorativeRules() {
             className="absolute z-10"
             style={{ left: '125px', top: '-200px', width: '650px' }}
           >
-            <h2 className="text-4xl md:text-5xl font-bold text-[#575756] text-left" style={{ lineHeight: '1.2' }}>
+            <h2 className="text-4xl md:text-5xl font-bold text-emova-grey text-left" style={{ lineHeight: '1.2' }}>
               Reporte ejecutivo completo
               <br />
-              <span className="text-[#B9C85E]">(valor $2,000)</span>
+              <span className="text-emova-primary">(valor $2,000)</span>
             </h2>
           </motion.div>
 
@@ -404,7 +411,7 @@ export default function DecorativeRules() {
           >
             <a
               href="/contacto"
-              className="inline-flex items-center gap-2 px-8 py-4 bg-white text-[#B9C85E] font-semibold rounded-full hover:bg-gray-50 transition-colors"
+              className="inline-flex items-center gap-2 px-8 py-4 bg-white text-emova-primary font-semibold rounded-full hover:bg-gray-50 transition-colors"
             >
               Agenda tu diagnóstico neuroemocional gratuito
               <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -417,7 +424,7 @@ export default function DecorativeRules() {
       </div>
 
       {/* Sección de tarjetas */}
-      <div className="w-full bg-[#B9C85E] py-16 md:py-24 relative" style={{ marginTop: '-400px', zIndex: 20 }}>
+      <div className="w-full bg-emova-primary py-16 md:py-24 relative" style={{ marginTop: '-400px', zIndex: 20 }}>
         <div className="container mx-auto px-4 md:px-6 max-w-7xl">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8" style={{ marginTop: '-325px' }}>
             
@@ -430,26 +437,26 @@ export default function DecorativeRules() {
               className="bg-white rounded-3xl p-8"
               style={{ paddingTop: '112px', paddingBottom: '112px' }}
             >
-              <h3 className="text-xl font-bold text-[#575756] mb-4">Sección 1</h3>
-              <p className="text-[#575756] mb-6">Estado Actual de tu Infraestructura Humana</p>
+              <h3 className="text-xl font-bold text-emova-grey mb-4">Sección 1</h3>
+              <p className="text-emova-grey mb-6">Estado Actual de tu Infraestructura Humana</p>
               <ul className="space-y-4">
                 <li className="flex items-start gap-3">
-                  <svg className="w-5 h-5 text-[#B9C85E] mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                  <svg className="w-5 h-5 text-emova-primary mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"/>
                   </svg>
-                  <span className="text-[#575756]">Dashboard visual de fortalezas y carencias por área</span>
+                  <span className="text-emova-grey">Dashboard visual de fortalezas y carencias por área</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <svg className="w-5 h-5 text-[#B9C85E] mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                  <svg className="w-5 h-5 text-emova-primary mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"/>
                   </svg>
-                  <span className="text-[#575756]">Índice de Inteligencia Emocional Organizacional (IIEO)</span>
+                  <span className="text-emova-grey">Índice de Inteligencia Emocional Organizacional (IIEO)</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <svg className="w-5 h-5 text-[#B9C85E] mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                  <svg className="w-5 h-5 text-emova-primary mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"/>
                   </svg>
-                  <span className="text-[#575756]">Mapa de riesgos emocionales por equipos</span>
+                  <span className="text-emova-grey">Mapa de riesgos emocionales por equipos</span>
                 </li>
               </ul>
             </motion.div>
@@ -460,29 +467,29 @@ export default function DecorativeRules() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.1 }}
-              className="bg-[#E8F5CB] rounded-3xl p-8"
+              className="bg-emova-tertiary rounded-3xl p-8"
               style={{ paddingTop: '112px', paddingBottom: '112px' }}
             >
-              <h3 className="text-xl font-bold text-[#B9C85E] mb-4">Sección 2</h3>
-              <p className="text-[#B9C85E] mb-6">Análisis de Impacto Financiero</p>
+              <h3 className="text-xl font-bold text-emova-secondary mb-4">Sección 2</h3>
+              <p className="text-emova-secondary mb-6">Análisis de Impacto Financiero</p>
               <ul className="space-y-4">
                 <li className="flex items-start gap-3">
-                  <svg className="w-5 h-5 text-[#B9C85E] mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                  <svg className="w-5 h-5 text-emova-secondary mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"/>
                   </svg>
-                  <span className="text-[#B9C85E]">Costo actual de las carencias detectadas</span>
+                  <span className="text-emova-secondary">Costo actual de las carencias detectadas</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <svg className="w-5 h-5 text-[#B9C85E] mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                  <svg className="w-5 h-5 text-emova-secondary mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"/>
                   </svg>
-                  <span className="text-[#B9C85E]">Proyección de pérdidas a 12 meses sin intervención</span>
+                  <span className="text-emova-secondary">Proyección de pérdidas a 12 meses sin intervención</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <svg className="w-5 h-5 text-[#B9C85E] mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                  <svg className="w-5 h-5 text-emova-secondary mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"/>
                   </svg>
-                  <span className="text-[#B9C85E]">ROI estimado de plan de activación</span>
+                  <span className="text-emova-secondary">ROI estimado de plan de activación</span>
                 </li>
               </ul>
             </motion.div>
@@ -496,26 +503,26 @@ export default function DecorativeRules() {
               className="bg-white rounded-3xl p-8"
               style={{ paddingTop: '112px', paddingBottom: '112px' }}
             >
-              <h3 className="text-xl font-bold text-[#575756] mb-4">Sección 3</h3>
-              <p className="text-[#575756] mb-6">Plan de Acción de Activación de Humanidad</p>
+              <h3 className="text-xl font-bold text-emova-grey mb-4">Sección 3</h3>
+              <p className="text-emova-grey mb-6">Plan de Acción de Activación de Humanidad</p>
               <ul className="space-y-4">
                 <li className="flex items-start gap-3">
-                  <svg className="w-5 h-5 text-[#B9C85E] mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                  <svg className="w-5 h-5 text-emova-primary mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"/>
                   </svg>
-                  <span className="text-[#575756]">Las 3 palancas de mayor impacto para tu organización</span>
+                  <span className="text-emova-grey">Las 3 palancas de mayor impacto para tu organización</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <svg className="w-5 h-5 text-[#B9C85E] mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                  <svg className="w-5 h-5 text-emova-primary mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"/>
                   </svg>
-                  <span className="text-[#575756]">Roadmap de implementación en 90 días</span>
+                  <span className="text-emova-grey">Roadmap de implementación en 90 días</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <svg className="w-5 h-5 text-[#B9C85E] mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                  <svg className="w-5 h-5 text-emova-primary mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"/>
                   </svg>
-                  <span className="text-[#575756]">Métricas específicas para medir progreso</span>
+                  <span className="text-emova-grey">Métricas específicas para medir progreso</span>
                 </li>
               </ul>
             </motion.div>
@@ -531,7 +538,7 @@ export default function DecorativeRules() {
             className="text-4xl md:text-5xl lg:text-6xl font-bold text-center mt-16 md:mt-24"
           >
             <span className="text-white">¿Por qué este diagnóstico es </span>
-            <span className="text-[#E8F5CB]">diferente?</span>
+            <span className="text-emova-light-green">diferente?</span>
           </motion.h2>
 
           {/* Contenido con mano y burbujas */}
@@ -559,7 +566,7 @@ export default function DecorativeRules() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.2 }}
-              className="absolute bg-[#E8F5CB] rounded-full"
+              className="absolute bg-emova-secondary rounded-full"
               style={{ 
                 width: '280px', 
                 height: '280px',
@@ -584,7 +591,7 @@ export default function DecorativeRules() {
               }}
             >
               <div className="flex items-start gap-2 mb-2">
-                <span className="text-[#E8F5CB] text-3xl">✱</span>
+                <span className="text-emova-secondary text-3xl">✱</span>
                 <h3 className="text-white font-bold text-2xl">No es una encuesta genérica</h3>
               </div>
               <p className="text-white text-lg" style={{ maxWidth: '500px' }}>
@@ -598,7 +605,7 @@ export default function DecorativeRules() {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.4 }}
-              className="absolute bg-[#E8F5CB] rounded-full flex flex-col items-start justify-center p-10"
+              className="absolute bg-emova-secondary rounded-full flex flex-col items-start justify-center p-10"
               style={{ 
                 width: '380px', 
                 height: '380px',
@@ -608,10 +615,10 @@ export default function DecorativeRules() {
               }}
             >
               <div className="flex items-start gap-2 mb-2">
-                <span className="text-[#B9C85E] text-3xl">✱</span>
-                <h3 className="text-[#575756] font-bold text-2xl">No son opiniones subjetivas</h3>
+                <span className="text-emova-tertiary text-3xl">✱</span>
+                <h3 className="text-emova-tertiary font-bold text-2xl">No son opiniones subjetivas</h3>
               </div>
-              <p className="text-[#575756] text-xl">
+              <p className="text-emova-tertiary text-xl">
                 Medimos indicadores específicos de inteligencia emocional con herramientas científicamente validadas.
               </p>
             </motion.div>
@@ -622,7 +629,7 @@ export default function DecorativeRules() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.6 }}
-              className="absolute bg-[#E8F5CB] rounded-full"
+              className="absolute bg-emova-secondary rounded-full"
               style={{ 
                 width: '280px', 
                 height: '280px',
@@ -647,7 +654,7 @@ export default function DecorativeRules() {
               }}
             >
               <div className="flex items-start gap-2 mb-2">
-                <span className="text-[#E8F5CB] text-3xl">✱</span>
+                <span className="text-emova-light-green text-3xl">✱</span>
                 <h3 className="text-white font-bold text-2xl">No es sólo un reporte</h3>
               </div>
               <p className="text-white text-lg" style={{ maxWidth: '500px' }}>

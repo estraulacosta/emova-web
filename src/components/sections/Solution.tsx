@@ -42,16 +42,45 @@ export default function Solution() {
                 </div>
 
                 {/* Content */}
-                <div className="relative z-10 pt-0 min-[375px]:pt-3 sm:pt-6 md:pt-12 pb-10 px-6 sm:px-8 md:px-12 text-center max-w-3xl mx-auto">
-                  <h2 className="text-base sm:text-xl md:text-6xl font-playfair font-bold mb-2 sm:mb-3 md:mb-10 text-emova-secondary">
+                <div
+                  className="solution-bubble-content relative z-10 pt-0 min-[375px]:pt-3 sm:pt-6 md:pt-12 pb-10 px-6 sm:px-8 md:px-12 text-center max-w-3xl mx-auto"
+                  style={{
+                    ...(typeof window !== 'undefined' && window.innerWidth >= 1024 && window.innerWidth <= 1050
+                      ? { paddingLeft: '6vw', paddingRight: '6vw', maxWidth: '92vw', marginBottom: 100 }
+                      : {})
+                  }}
+                >
+                  <h2
+                    className="text-base sm:text-xl md:text-6xl font-playfair font-bold mb-2 sm:mb-3 md:mb-10 text-emova-secondary"
+                    style={{
+                      ...(typeof window !== 'undefined' && window.innerWidth >= 1024 && window.innerWidth <= 1050
+                        ? { fontSize: '5rem', color: '#575756', fontWeight: 700, lineHeight: 1.1, letterSpacing: '-1px', textAlign: 'center', marginBottom: '2.5rem' }
+                        : {})
+                    }}
+                  >
                     Solución
                   </h2>
-                  
-                  <div className="space-y-2 sm:space-y-3 md:space-y-6 text-emova-grey">
-                    <p className="text-[9px] min-[375px]:text-[11px] sm:text-sm md:text-2xl font-libre leading-tight md:leading-relaxed">
+                  <div
+                    className="space-y-2 sm:space-y-3 md:space-y-6 text-emova-grey"
+                  >
+                    <p
+                      className="text-[9px] min-[375px]:text-[11px] sm:text-sm md:text-2xl font-libre leading-tight md:leading-relaxed"
+                      style={{
+                        ...(typeof window !== 'undefined' && window.innerWidth >= 1024 && window.innerWidth <= 1050
+                          ? { fontSize: '2.2rem', lineHeight: '2.2rem', color: '#575756' }
+                          : {})
+                      }}
+                    >
                       Somos la única Activadora de Inteligencia Emocional Organizacional. No capacitamos personas. Activamos transformación humana.
                     </p>
-                    <p className="text-[9px] min-[375px]:text-[11px] sm:text-sm md:text-2xl font-libre leading-tight md:leading-relaxed opacity-90">
+                    <p
+                      className="text-[9px] min-[375px]:text-[11px] sm:text-sm md:text-2xl font-libre leading-tight md:leading-relaxed opacity-90"
+                      style={{
+                        ...(typeof window !== 'undefined' && window.innerWidth >= 1024 && window.innerWidth <= 1050
+                          ? { fontSize: '2.2rem', lineHeight: '2.2rem', color: '#575756' }
+                          : {})
+                      }}
+                    >
                       A diferencia de consultoras tradicionales que entregan contenidos genéricos, nosotros activamos transformaciones neuroemocionales reales mediante nuestro Modelo de Transformación Neuroemocional™.
                     </p>
                   </div>
@@ -60,6 +89,8 @@ export default function Solution() {
            </motion.div>
         </div>
 
+        {/* Resultado */}
+        <div className="resultado-section"></div>
       </div>
     </section>
   );

@@ -23,11 +23,11 @@ export default function Footer() {
             </a>
           </div>
         </div>
-        {/* Bloque medio: columnas */}
+        {/* Bloque medio: columnas en una sola línea */}
         <div className="py-8 border-b border-white/20">
-          <div className="flex flex-col md:flex-row md:justify-between gap-8">
+          <div className="footer-sections-row grid grid-cols-1 lg:grid-cols-5 gap-8 w-full">
             {/* Links */}
-            <div className="md:min-w-[140px]">
+            <div className="footer-section min-w-[140px]">
               <h4 className="font-playfair font-bold mb-2 text-lg">Links</h4>
               <ul className="space-y-1 text-white/90">
                 <li><Link href="/" className="hover:underline">Home</Link></li>
@@ -38,9 +38,8 @@ export default function Footer() {
                 <li><Link href="/contacto" className="hover:underline">Contacto</Link></li>
               </ul>
             </div>
-
             {/* Soporte */}
-            <div className="md:min-w-[140px]">
+            <div className="footer-section min-w-[140px]">
               <h4 className="font-playfair font-bold mb-2 text-lg">Soporte</h4>
               <ul className="space-y-1 text-white/90">
                 <li><a href="#" className="hover:underline">Ayuda</a></li>
@@ -49,9 +48,8 @@ export default function Footer() {
                 <li><a href="#" className="hover:underline">Políticas</a></li>
               </ul>
             </div>
-
             {/* Servicios */}
-            <div className="md:min-w-[140px]">
+            <div className="footer-section min-w-[140px]">
               <h4 className="font-playfair font-bold mb-2 text-lg">Servicios</h4>
               <ul className="space-y-1 text-white/90">
                 <li><Link href="/metodo" className="hover:underline">Métodos</Link></li>
@@ -59,9 +57,8 @@ export default function Footer() {
                 <li><Link href="/diagnostico" className="hover:underline">Diagnóstico</Link></li>
               </ul>
             </div>
-
             {/* Contacto */}
-            <div className="md:min-w-[200px]">
+            <div className="footer-contact min-w-[180px]">
               <h4 className="font-playfair font-bold mb-2 text-lg">Contacto</h4>
               <ul className="space-y-1 text-white/90">
                 <li className="flex items-center gap-3">
@@ -78,9 +75,8 @@ export default function Footer() {
                 </li>
               </ul>
             </div>
-
             {/* Suscríbete */}
-            <div className="md:min-w-[280px] md:max-w-[320px]">
+            <div className="footer-suscribe min-w-[220px] max-w-[320px]">
               <h4 className="font-playfair font-bold mb-2 text-lg">Suscríbete</h4>
               <div className="flex flex-col gap-2">
                 <span className="text-white/90 text-sm font-noto leading-tight">

@@ -34,7 +34,7 @@ export default function Result() {
           transition={{ duration: 0.6, delay: 0.4 }}
           className="mb-16 relative z-20"
         >
-          <Link href="/metodo" className="bg-white hover:bg-gray-100 text-emova-primary font-libre font-bold px-8 py-4 rounded-full text-lg transition-colors flex items-center gap-2 mx-auto">
+          <Link href="/metodo" className="bg-white hover:bg-emova-secondary text-emova-primary font-libre font-bold px-8 py-4 rounded-full text-lg transition-colors flex items-center gap-2 mx-auto">
             Descubre cómo lo hacemos realidad
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-5 h-5">
               <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />

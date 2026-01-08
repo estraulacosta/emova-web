@@ -596,7 +596,7 @@ export default function DecorativeRules() {
           >
             <a
               href="/contacto"
-              className="inline-flex items-center gap-2 px-8 py-4 bg-white text-emova-primary font-semibold rounded-full hover:bg-gray-50 transition-colors"
+              className="inline-flex items-center gap-2 px-8 py-4 bg-white text-emova-primary font-semibold rounded-full hover:bg-emova-secondary transition-colors"
             >
               Agenda tu diagnóstico neuroemocional gratuito
               <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">

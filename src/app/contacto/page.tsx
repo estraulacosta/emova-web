@@ -30,14 +30,14 @@ export default function ContactoPage() {
         initial={{ y: -200 }}
         animate={{ y: 0 }}
         transition={{ duration: 0.8, ease: 'easeOut', delay: 0.2 }}
-        className="w-full bg-emova-primary flex justify-center items-center py-12 md:py-16 lg:py-22 pt-32"
+        className="w-full bg-emova-primary flex justify-center items-center py-12 md:py-20 lg:py-22 pt-32"
         style={{ zIndex: 10, position: 'relative' }}
       >
         <motion.h1
           initial={false}
           animate={{ y: 0 }}
           transition={{ duration: 0.8, ease: 'easeOut', delay: 0.2 }}
-          className="text-3xl md:text-5xl lg:text-6xl font-playfair font-bold text-white text-center px-4 relative top-0 md:top-0 lg:top-7"
+          className="text-3xl md:text-5xl lg:text-6xl font-playfair font-bold text-white text-center px-4 relative top-0 md:top-10 lg:top-7"
         >
           Contáctanos
         </motion.h1>
@@ -219,7 +219,7 @@ export default function ContactoPage() {
                 <div className="flex justify-start">
                   <button
                     type="submit"
-                    className="bg-[#B9C85E] text-white px-10 py-3 sm:px-20 sm:py-6 md:px-12 md:py-3 rounded-full font-semibold hover:bg-[#9FB350] transition-colors flex items-center justify-center gap-2 sm:gap-4 md:gap-3 font-libre text-lg sm:text-3xl md:text-lg"
+                    className="bg-[#B9C85E] text-white px-10 py-3 sm:px-20 sm:py-6 md:px-12 md:py-3 rounded-full font-semibold hover:bg-emova-secondary transition-colors flex items-center justify-center gap-2 sm:gap-4 md:gap-3 font-libre text-lg sm:text-3xl md:text-lg"
                   >
                     Enviar
                     <span className="text-2xl sm:text-5xl md:text-2xl font-bold">+</span>
@@ -298,7 +298,7 @@ export default function ContactoPage() {
             transition={{ duration: 0.8, delay: 1.4 }}
             className="text-center mt-8 sm:mt-10 md:mt-12 lg:mt-16 px-4"
           >
-            <h2 className="text-xl sm:text-3xl md:text-4xl lg:text-4xl xl:text-5xl font-playfair font-bold text-gray-300">
+            <h2 className="text-xl sm:text-3xl md:text-4xl lg:text-4xl xl:text-5xl font-playfair font-bold text-emova-secondary">
               La <span className="text-white">revolución humana</span> comienza ahora
             </h2>
           </motion.div>

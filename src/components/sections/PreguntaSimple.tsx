@@ -77,8 +77,8 @@ export default function PreguntaSimple() {
           />
         </div>
         {/* Texto dentro de la burbuja */}
-        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 max-w-[300px] w-full flex flex-col items-center z-20 px-3">
-          <h3 className="text-emova-tertiary text-[1.1rem] font-extrabold font-playfair mb-2 text-center leading-tight break-words" style={{paddingLeft: '5px', paddingRight: '5px', wordBreak: 'break-word'}}>¿Cuánto te está costando<br /><span className="text-black font-extrabold">NO saber qué está roto en tu infraestructura humana?</span></h3>
+        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 max-w-[300px] w-full flex flex-col items-center z-20 px-3 py-10">
+          <h3 className="text-emova-tertiary text-[0.9rem] font-extrabold font-playfair mb-2 text-center leading-tight break-words" style={{paddingLeft: '5px', paddingRight: '5px', wordBreak: 'break-word'}}>¿Cuánto te está costando<br /><span className="text-black font-extrabold">NO saber qué está roto en tu infraestructura humana?</span></h3>
         </div>
         {/* Persona sentada centrada */}
         <div className="absolute left-1/2 bottom-4 z-20" style={{transform: 'translateX(-50%) translateY(-60px)'}}>

@@ -30,14 +30,14 @@ export default function ContactoPage() {
         initial={{ y: -200 }}
         animate={{ y: 0 }}
         transition={{ duration: 0.8, ease: 'easeOut', delay: 0.2 }}
-        className="w-full bg-emova-primary flex justify-center items-center py-12 md:py-16 lg:py-22 pt-32"
+        className="w-full bg-emova-primary flex justify-center items-center py-12 md:py-20 lg:py-22 pt-32"
         style={{ zIndex: 10, position: 'relative' }}
       >
         <motion.h1
           initial={false}
           animate={{ y: 0 }}
           transition={{ duration: 0.8, ease: 'easeOut', delay: 0.2 }}
-          className="text-3xl md:text-5xl lg:text-6xl font-playfair font-bold text-white text-center px-4 relative top-0 md:top-0 lg:top-7"
+          className="text-3xl md:text-5xl lg:text-6xl font-playfair font-bold text-white text-center px-4 relative top-0 md:top-10 lg:top-7"
         >
           Contáctanos
         </motion.h1>
@@ -298,7 +298,7 @@ export default function ContactoPage() {
             transition={{ duration: 0.8, delay: 1.4 }}
             className="text-center mt-8 sm:mt-10 md:mt-12 lg:mt-16 px-4"
           >
-            <h2 className="text-xl sm:text-3xl md:text-4xl lg:text-4xl xl:text-5xl font-playfair font-bold text-gray-300">
+            <h2 className="text-xl sm:text-3xl md:text-4xl lg:text-4xl xl:text-5xl font-playfair font-bold text-emova-secondary">
               La <span className="text-white">revolución humana</span> comienza ahora
             </h2>
           </motion.div>

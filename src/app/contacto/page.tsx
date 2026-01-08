@@ -1,11 +1,27 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Mail, Phone, MapPin } from "lucide-react";
+import { Mail, Phone, MapPin, ChevronUp } from "lucide-react";
+import { useState, useEffect } from "react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
 export default function ContactoPage() {
+  const [showScrollTop, setShowScrollTop] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setShowScrollTop(window.scrollY > 400);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
   return (
     <main className="min-h-screen">
       <Navbar />
@@ -14,14 +30,14 @@ export default function ContactoPage() {
         initial={{ y: -200 }}
         animate={{ y: 0 }}
         transition={{ duration: 0.8, ease: 'easeOut', delay: 0.2 }}
-        className="w-full bg-[#B9C85E] flex justify-center items-center py-6 sm:py-8 md:py-12 lg:h-[220px] mt-20 sm:mt-24 md:mt-12"
+        className="w-full bg-emova-primary flex justify-center items-center py-12 md:py-16 lg:py-22 pt-32"
         style={{ zIndex: 10, position: 'relative' }}
       >
         <motion.h1
           initial={false}
           animate={{ y: 0 }}
           transition={{ duration: 0.8, ease: 'easeOut', delay: 0.2 }}
-          className="text-2xl sm:text-5xl md:text-5xl lg:text-5xl xl:text-6xl font-playfair font-bold text-white text-center px-4 mt-[60px] sm:mt-[65px] md:mt-[65px] lg:mt-[40px]"
+          className="text-3xl md:text-5xl lg:text-6xl font-playfair font-bold text-white text-center px-4 relative top-0 md:top-0 lg:top-7"
         >
           Contáctanos
         </motion.h1>
@@ -33,8 +49,7 @@ export default function ContactoPage() {
           {/* Contact Info - Horizontal Layout */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
+            animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
             className="mb-8 sm:mb-12 md:mb-16"
           >
@@ -147,8 +162,7 @@ export default function ContactoPage() {
           {/* Contact Form */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
+            animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.3 }}
             className="max-w-2xl mx-auto"
           >
@@ -224,9 +238,8 @@ export default function ContactoPage() {
             alt="Flecha"
             className="w-12 sm:w-20 md:w-20 h-auto"
             initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.6, delay: 0.6 }}
           />
         </div>
       </section>
@@ -238,9 +251,8 @@ export default function ContactoPage() {
           <motion.div 
             className="relative -mt-[80px] sm:-mt-[100px] md:-mt-[180px] lg:-mt-[150px] mb-4 sm:mb-6 md:mb-8"
             initial={{ scale: 0, opacity: 0, y: 100 }}
-            whileInView={{ scale: 1, opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 1, ease: "easeOut", delay: 1 }}
+            animate={{ scale: 1, opacity: 1, y: 0 }}
+            transition={{ duration: 1, ease: "easeOut", delay: 0.8 }}
           >
             <div className="flex justify-center">
               <img 
@@ -256,9 +268,8 @@ export default function ContactoPage() {
             <motion.div 
               className="relative w-full max-w-sm sm:max-w-md md:max-w-xl lg:max-w-2xl z-20"
               initial={{ scale: 0, opacity: 0 }}
-              whileInView={{ scale: 1, opacity: 1 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
+              animate={{ scale: 1, opacity: 1 }}
+              transition={{ duration: 0.8, ease: "easeOut", delay: 1 }}
             >
               <img 
                 src="/assets/burbuja_final.svg" 
@@ -270,9 +281,8 @@ export default function ContactoPage() {
               <div className="absolute inset-0 flex items-center justify-center px-6 sm:px-8 md:px-12 lg:px-16">
                 <motion.p
                   initial={{ opacity: 0, scale: 0.9 }}
-                  whileInView={{ opacity: 1, scale: 1 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.8, delay: 0.2 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  transition={{ duration: 0.8, delay: 1.2 }}
                   className="text-center text-[#575756] font-noto text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl leading-tight sm:leading-snug md:leading-normal lg:leading-relaxed"
                 >
                   "La era de la automatización ha llegado. Las organizaciones que inviertan en factor humano tendrán la ventaja competitiva del futuro: equipos más innovadores, culturas más resilientes y relaciones que ningún algoritmo puede reemplazar."
@@ -284,9 +294,8 @@ export default function ContactoPage() {
           {/* Revolution Text */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8, delay: 0.3 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 1.4 }}
             className="text-center mt-8 sm:mt-10 md:mt-12 lg:mt-16 px-4"
           >
             <h2 className="text-xl sm:text-3xl md:text-4xl lg:text-4xl xl:text-5xl font-playfair font-bold text-gray-300">
@@ -297,6 +306,20 @@ export default function ContactoPage() {
       </section>
 
       <Footer />
+
+      {/* Scroll to Top Button */}
+      {showScrollTop && (
+        <motion.button
+          initial={{ opacity: 0, scale: 0.8 }}
+          animate={{ opacity: 1, scale: 1 }}
+          exit={{ opacity: 0, scale: 0.8 }}
+          onClick={scrollToTop}
+          className="fixed bottom-8 right-8 z-50 bg-emova-primary text-white p-4 rounded-full shadow-lg hover:bg-emova-secondary onhold:bg-emova-secondary transition-all duration-300"
+          aria-label="Volver arriba"
+        >
+          <ChevronUp size={24} />
+        </motion.button>
+      )}
     </main>
   );
 }

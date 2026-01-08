@@ -13,7 +13,7 @@ export default function DiagnosticoPage() {
       <HeroDiagnostico />
       <DecorativeRules />
       <PreguntaSimple />
-      <div className="relative z-50">
+      <div className="relative z-40">
         <Footer />
       </div>
     </main>

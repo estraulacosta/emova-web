@@ -152,7 +152,7 @@ function HeroContent() {
           >
             <Link
               href="#diagnostico"
-              className="group inline-flex items-center justify-center text-center gap-2 md:gap-3 px-5 md:px-8 py-3 md:py-4 text-xs sm:text-sm md:text-base lg:text-lg font-semibold text-black transition-all duration-300 bg-emova-primary rounded-full hover:bg-emova-secondary hover:shadow-2xl hover:shadow-emova-primary/50 hover:-translate-y-1 max-w-full"
+              className="group inline-flex items-center justify-center text-center gap-2 md:gap-3 px-5 md:px-8 py-3 md:py-4 text-xs sm:text-sm md:text-base lg:text-lg font-semibold text-black transition-all duration-300 bg-emova-primary rounded-full hover:bg-emova-secondary hover:shadow-2xl hover:shadow-emova-primary/50 hover:-translate-y-1 max-w-full hover:text-emova-white"
             >
               <span className="text-center leading-tight">Agenda tu Diagnóstico Neuroemocional Gratuito</span>
             </Link>

@@ -97,7 +97,7 @@ export default function PreguntaSimple() {
         <p className="text-black text-sm md:text-base font-noto text-center max-w-xl mb-6 px-4">
           Cada día que esperas, pierdes más talento, más productividad y más oportunidades de convertir tu factor humano en ventaja competitiva.
         </p>
-        <button className="inline-flex items-center gap-2 px-2.5 md:px-8 py-3 md:py-4 bg-emova-primary text-white font-semibold font-noto rounded-full hover:bg-emova-tertiary transition-colors text-sm md:text-base">
+        <button className="inline-flex items-center gap-2 px-2.5 md:px-8 py-3 md:py-4 bg-emova-primary text-white font-semibold font-noto rounded-full hover:bg-emova-secondary transition-colors text-sm md:text-base">
           Agenda tu diagnóstico neuroemocional gratuito
           <span className="bg-white text-emova-primary rounded-full px-2 py-1 font-bold">+</span>
         </button>

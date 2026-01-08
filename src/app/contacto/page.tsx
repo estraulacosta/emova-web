@@ -219,7 +219,7 @@ export default function ContactoPage() {
                 <div className="flex justify-start">
                   <button
                     type="submit"
-                    className="bg-[#B9C85E] text-white px-10 py-3 sm:px-20 sm:py-6 md:px-12 md:py-3 rounded-full font-semibold hover:bg-[#9FB350] transition-colors flex items-center justify-center gap-2 sm:gap-4 md:gap-3 font-libre text-lg sm:text-3xl md:text-lg"
+                    className="bg-[#B9C85E] text-white px-10 py-3 sm:px-20 sm:py-6 md:px-12 md:py-3 rounded-full font-semibold hover:bg-emova-secondary transition-colors flex items-center justify-center gap-2 sm:gap-4 md:gap-3 font-libre text-lg sm:text-3xl md:text-lg"
                   >
                     Enviar
                     <span className="text-2xl sm:text-5xl md:text-2xl font-bold">+</span>

@@ -20,32 +20,25 @@ export default function Navbar() {
   const pathname = usePathname();
 
 
-  // Forzar fondo blanco semitransparente y sombra en /contacto igual que al hacer scroll
-  const isContacto = pathname === "/contacto";
-
   useEffect(() => {
-    if (isContacto) {
-      setIsScrolled(true);
-      return;
-    }
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 50);
     };
     handleScroll();
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
-  }, [isContacto]);
+  }, []);
 
   return (
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isContacto ? "bg-[#B9C85E]/90 backdrop-blur-md py-8" : isScrolled ? "bg-white/90 backdrop-blur-md shadow-md py-4" : "bg-transparent py-8"
+        isScrolled ? "bg-white/90 backdrop-blur-md shadow-md py-4" : "bg-transparent py-8"
       }`}
     >
       <div className="container mx-auto px-6 flex items-center justify-between">
         <Link href="/" className="relative w-72 h-24">
           <Image
-            src={isContacto ? "/assets/logo_blanco.svg" : isScrolled ? "/assets/Logo.svg" : "/assets/logo_blanco.svg"}
+            src={isScrolled ? "/assets/Logo.svg" : "/assets/logo_blanco.svg"}
             alt="EMOVA"
             fill
             className="object-contain object-left"
@@ -59,11 +52,9 @@ export default function Navbar() {
               key={link.name}
               href={link.href}
               className={`transition-colors font-medium font-noto ${
-                isContacto
-                  ? "text-white hover:text-[#9FB350]"
-                  : isScrolled
-                    ? "text-emova-grey hover:text-emova-primary"
-                    : "text-white hover:text-white/80"
+                isScrolled
+                  ? "text-emova-grey hover:text-emova-primary"
+                  : "text-white hover:text-white/80"
               }`}
             >
               {link.name}
@@ -71,18 +62,14 @@ export default function Navbar() {
           ))}
           <Link
             href="/contacto"
-            className={`px-6 py-2 rounded-full font-semibold transition-colors font-noto ${
-              isContacto
-                ? "bg-[#9FB350] text-white hover:bg-white hover:text-[#9FB350]"
-                : "bg-emova-primary text-white hover:bg-emova-secondary"
-            }`}
+            className="px-6 py-2 rounded-full font-semibold transition-colors font-noto bg-emova-primary text-white hover:bg-emova-secondary"
           >
             Contáctanos
           </Link>
         </div>
 
         <button
-          className={`lg:hidden ${isScrolled || isContacto ? "text-emova-grey" : "text-white"}`}
+          className={`lg:hidden ${isScrolled ? "text-emova-grey" : "text-white"}`}
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
         >
           {isMobileMenuOpen ? <X /> : <Menu />}

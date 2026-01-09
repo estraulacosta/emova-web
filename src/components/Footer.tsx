@@ -82,12 +82,12 @@ export default function Footer() {
                 <span className="text-white/90 text-sm font-noto leading-tight">
                   Mantente informado y listo para<br />revolucionar el mundo.
                 </span>
-                <form className="relative w-full mt-2 flex items-center">
-                  <input type="email" placeholder="Email" className="w-full h-12 rounded-lg px-4 pr-12 text-black focus:outline-none font-noto bg-white placeholder-gray-500" />
-                  <button type="submit" className="absolute right-3 top-1/2 -translate-y-1/2 bg-transparent text-[#9FB350] font-bold flex items-center hover:text-[#7a8c36] transition-colors text-xl">
-                    <span>→</span>
-                  </button>
-                </form>
+                <Link href="/contacto" className="relative w-full mt-2 flex items-center h-12 rounded-lg px-4 pr-12 text-gray-500 bg-white hover:bg-gray-50 transition-colors group">
+                  <span className="font-noto">Email</span>
+                  <span className="absolute right-3 top-1/2 -translate-y-1/2 text-[#9FB350] font-bold flex items-center group-hover:text-[#7a8c36] transition-colors text-xl">
+                    →
+                  </span>
+                </Link>
               </div>
             </div>
           </div>

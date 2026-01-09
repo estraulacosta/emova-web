@@ -167,7 +167,7 @@ export default function ContactoPage() {
             className="max-w-2xl mx-auto"
           >
               <form 
-                action="https://formspree.io/f/YOUR_FORM_ID" 
+                action="https://formspree.io/f/mjggbwya" 
                 method="POST"
                 className="space-y-6"
               >

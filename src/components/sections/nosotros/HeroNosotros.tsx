@@ -291,7 +291,7 @@ export default function HeroNosotros() {
                 </p>
               </div>
 
-              <Link href="/metodo" className="bg-emova-primary text-white px-4 md:px-6 lg:px-8 py-2 md:py-3 rounded-full font-semibold hover:bg-emova-secondary transition-colors font-noto inline-flex items-center gap-2 text-xs md:text-sm lg:text-base mx-auto lg:mx-0">
+              <Link href="/evidencia" className="bg-emova-primary text-white px-4 md:px-6 lg:px-8 py-2 md:py-3 rounded-full font-semibold hover:bg-emova-secondary transition-colors font-noto inline-flex items-center gap-2 text-xs md:text-sm lg:text-base mx-auto lg:mx-0">
                 Conoce cómo activamos la humanidad en tu organización
                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M7.5 15L12.5 10L7.5 5" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>

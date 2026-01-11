@@ -645,7 +645,7 @@ export default function DecorativeRules() {
               className="col-span-m-3 col-span-t-5 flex justify-center md:justify-start"
             >
               <a
-                href="/contacto"
+                href="/diagnostico"
                 className="inline-flex items-center gap-2 px-6 md:px-8 py-3 md:py-4 bg-white text-emova-primary font-semibold rounded-full hover:bg-gray-50 transition-colors text-sm md:text-base"
               >
                 Agenda tu diagnóstico neuroemocional gratuito

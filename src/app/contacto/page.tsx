@@ -65,10 +65,10 @@ export default function ContactoPage() {
                 <div className="text-center sm:text-left">
                   <p className="text-[#575756] font-noto text-sm sm:text-5xl md:text-sm font-semibold">Cecilia Rivera - Fundadora</p>
                   <a 
-                    href="mailto:cecilia.rivera@altogrado.cl" 
+                    href="mailto:cecilia.rivera@emova.cl" 
                     className="text-[#575756] hover:text-[#B9C85E] transition-colors font-noto text-xs sm:text-4xl md:text-xs"
                   >
-                    cecilia.rivera@altogrado.cl
+                    cecilia.rivera@emova.cl
                   </a>
                 </div>
               </div>
@@ -81,10 +81,10 @@ export default function ContactoPage() {
                     <Mail className="w-5 h-5 sm:w-16 sm:h-16 md:w-5 md:h-5 text-[#B9C85E]" />
                   </div>
                   <a 
-                    href="mailto:contacto@altogrado.cl" 
+                    href="mailto:contacto@emova.cl" 
                     className="text-[#575756] hover:text-[#B9C85E] transition-colors font-noto text-sm sm:text-5xl md:text-sm"
                   >
-                    contacto@altogrado.cl
+                    contacto@emova.cl
                   </a>
                 </div>
 
@@ -115,10 +115,10 @@ export default function ContactoPage() {
                   <Mail className="w-5 h-5 text-[#B9C85E]" />
                 </div>
                 <a 
-                  href="mailto:contacto@altogrado.cl" 
+                  href="mailto:contacto@emova.cl" 
                   className="text-[#575756] hover:text-[#B9C85E] transition-colors font-noto text-sm"
                 >
-                  contacto@altogrado.cl
+                  contacto@emova.cl
                 </a>
               </div>
 
@@ -132,10 +132,10 @@ export default function ContactoPage() {
                 <div className="text-left">
                   <p className="text-[#575756] font-noto text-sm font-semibold">Cecilia Rivera - Fundadora</p>
                   <a 
-                    href="mailto:cecilia.rivera@altogrado.cl" 
+                    href="mailto:cecilia.rivera@emova.cl" 
                     className="text-[#575756] hover:text-[#B9C85E] transition-colors font-noto text-xs"
                   >
-                    cecilia.rivera@altogrado.cl
+                    cecilia.rivera@emova.cl
                   </a>
                 </div>
               </div>

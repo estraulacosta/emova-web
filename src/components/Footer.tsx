@@ -15,11 +15,8 @@ export default function Footer() {
           </Link>
           <div className="flex items-center gap-4">
             <span className="font-playfair font-bold text-lg mr-2">Síguenos</span>
-            <a href="#" aria-label="Facebook" className="hover:scale-110 transition-transform">
-              <img src="/assets/Facebook.svg" alt="Facebook" className="w-8 h-8" />
-            </a>
-            <a href="#" aria-label="Instagram" className="hover:scale-110 transition-transform" id="footer-instagram-icon">
-              <img src="/assets/Instagram.svg" alt="Instagram" className="w-8 h-8" />
+            <a href="https://www.linkedin.com/in/emova-activacion-inteligencia-emocional-b979433a4/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="hover:scale-110 transition-transform">
+              <img src="/assets/Linkedin.png" alt="LinkedIn" className="w-8 h-8" />
             </a>
           </div>
         </div>
@@ -71,7 +68,7 @@ export default function Footer() {
                   <span className="inline-block w-8 h-8 flex-shrink-0">
                     <img src="/assets/Correo.svg" alt="Correo" className="w-8 h-8" />
                   </span>
-                  contacto@emova.com
+                  contacto@emova.cl
                 </li>
               </ul>
             </div>

@@ -513,8 +513,8 @@ export default function Method() {
           transition={{ duration: 0.6, delay: 0.4 }}
           className="mb-4 relative z-20"
         >
-          <Link href="/nosotros" className="bg-emova-primary hover:bg-emova-secondary text-white font-libre font-bold px-4 sm:px-6 md:px-8 py-2 sm:py-3 md:py-4 rounded-full text-sm sm:text-base md:text-lg transition-colors flex items-center gap-2 mx-auto">
-            Descubre cómo lo hacemos realidad
+            <Link href="/evidencia" className="bg-emova-primary hover:bg-emova-secondary text-white font-libre font-bold px-4 sm:px-6 md:px-8 py-2 sm:py-3 md:py-4 rounded-full text-sm sm:text-base md:text-lg transition-colors flex items-center gap-2 mx-auto">
+              Descubre cómo lo hacemos realidad
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-4 h-4 sm:w-5 sm:h-5">
               <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
             </svg>

@@ -28,6 +28,8 @@ export default function Contact() {
                 <div>
                   <p className="text-sm opacity-60">Email</p>
                   <a href="mailto:contacto@emova.cl" className="hover:text-emova-primary transition-colors">contacto@emova.cl</a>
+                  <br />
+                  <a href="mailto:cecilia.rivera@emova.cl" className="hover:text-emova-primary transition-colors">cecilia.rivera@emova.cl</a>
                 </div>
               </div>
               <div className="flex items-center gap-4">

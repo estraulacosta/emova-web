@@ -34,7 +34,8 @@ export default function HeroDiagnostico() {
             Diagnóstico
           </motion.h1>
         </div>
-      </section>
+
+    </section>
 
       {/* Sección de círculos */}
       <section className="relative w-full bg-[#F5F5F5] py-12 md:py-16 lg:py-20 px-4" style={{ overflow: 'visible' }}>

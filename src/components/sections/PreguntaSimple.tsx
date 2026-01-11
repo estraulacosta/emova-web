@@ -16,7 +16,7 @@ export default function PreguntaSimple() {
 
       {/* Burbuja SVG y personas con texto dentro - Desktop */}
       <div className="hidden lg:block relative w-full flex justify-center items-center" style={{height: 420, marginTop: '75px'}}>
-        <div style={{transform: 'rotate(180deg) translateX(560px) translateY(80px)'}} className="relative z-0">
+        <div style={{transform: 'rotate(180deg) translateY(80px) scale(0.9)'}} className="relative z-0 flex justify-center items-center">
           <Image
             src="/assets/burbuja_final.svg"
             alt="Burbuja"
@@ -26,10 +26,10 @@ export default function PreguntaSimple() {
         </div>
         {/* Texto dentro de la burbuja */}
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 max-w-[520px] w-full flex flex-col items-center z-20 px-4">
-          <h3 className="text-emova-tertiary text-[1.971rem] md:text-[2.957rem] font-extrabold font-playfair mb-4 text-center leading-tight break-words" style={{paddingLeft: '5px', paddingRight: '5px', wordBreak: 'break-word'}}>¿Cuánto te está costando<br /><span className="text-black font-extrabold">NO saber qué está roto en tu infraestructura humana?</span></h3>
+          <h3 className="text-emova-tertiary text-[1.971rem] md:text-[2.957rem] font-extrabold font-playfair mb-4 text-center leading-tight break-words" style={{paddingLeft: '5px', paddingRight: '5px', wordBreak: 'break-word', transform: 'scale(0.7)'}}>¿Cuánto te está costando<br /><span className="text-black font-extrabold">NO saber qué está roto en tu infraestructura humana?</span></h3>
         </div>
         {/* Persona sentada centrada */}
-        <div className="absolute left-1/2 bottom-8 z-20" style={{transform: 'translateX(-50%)'}}>
+        <div className="absolute left-1/2 bottom-8 z-20" style={{transform: 'translateX(-50%) translateY(-5.4px) scale(1.05)'}}>
           <Image
             src="/assets/Personas Sentadas.png"
             alt="Persona Sentada"
@@ -41,8 +41,8 @@ export default function PreguntaSimple() {
       </div>
 
       {/* Burbuja SVG y personas con texto dentro - Tablet */}
-      <div className="hidden md:block lg:hidden relative w-full flex justify-center items-center" style={{height: 350, marginTop: '20px'}}>
-        <div style={{transform: 'rotate(180deg) translateX(180px) translateY(10px)'}} className="z-10">
+      <div className="hidden md:block lg:hidden relative w-full flex justify-center items-center align-center" style={{height: 350, marginTop: '20px'}}>
+        <div style={{transform: 'rotate(180deg) scale(0.87)'}} className="flex justify-center items-center align-center">
           <Image
             src="/assets/burbuja_final.svg"
             alt="Burbuja"
@@ -51,11 +51,11 @@ export default function PreguntaSimple() {
           />
         </div>
         {/* Texto dentro de la burbuja */}
-        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 max-w-[420px] w-full flex flex-col items-center z-20 px-4">
+        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 max-w-[420px] w-full flex flex-col items-center z-20 px-4" style={{transform: 'scale(0.85)'}}>
           <h3 className="text-emova-tertiary text-[1.5rem] font-extrabold font-playfair mb-3 text-center leading-tight break-words" style={{paddingLeft: '5px', paddingRight: '5px', wordBreak: 'break-word'}}>¿Cuánto te está costando<br /><span className="text-black font-extrabold">NO saber qué está roto en tu infraestructura humana?</span></h3>
         </div>
         {/* Persona sentada centrada */}
-        <div className="relative left-1/2 bottom-6 z-20" style={{transform: 'translateX(-230px) translateY(-138px)'}}>
+        <div className="relative bottom-6 z-20 flex justify-center items-center" style={{transform: 'translateY(-138px) scale(0.9)'}}>
           <Image
             src="/assets/Personas Sentadas.png"
             alt="Persona Sentada"
@@ -68,7 +68,7 @@ export default function PreguntaSimple() {
 
       {/* Burbuja SVG y personas con texto dentro - Móvil */}
       <div className="md:hidden relative w-full flex justify-center items-center" style={{height: 300, marginTop: '10px'}}>
-        <div style={{transform: 'rotate(180deg)'}} className="relative z-10">
+        <div style={{transform: 'rotate(180deg) scale(1.2)'}} className="relative z-10 items-center justify-center">
           <Image
             src="/assets/burbuja_final.svg"
             alt="Burbuja"
@@ -81,7 +81,7 @@ export default function PreguntaSimple() {
           <h3 className="text-emova-tertiary text-[0.9rem] font-extrabold font-playfair mb-2 text-center leading-tight break-words" style={{paddingLeft: '5px', paddingRight: '5px', wordBreak: 'break-word'}}>¿Cuánto te está costando<br /><span className="text-black font-extrabold">NO saber qué está roto en tu infraestructura humana?</span></h3>
         </div>
         {/* Persona sentada centrada */}
-        <div className="absolute left-1/2 bottom-4 z-20" style={{transform: 'translateX(-50%) translateY(-60px)'}}>
+        <div className="absolute left-1/2 bottom-4 z-20" style={{transform: 'translateX(-50%) translateY(-60px) scale(1.2)'}}>
           <Image
             src="/assets/Personas Sentadas.png"
             alt="Persona Sentada"

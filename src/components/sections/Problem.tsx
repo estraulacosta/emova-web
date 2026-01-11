@@ -26,8 +26,8 @@ export default function Problem() {
 
   useEffect(() => {
     const updateScale = () => {
-      const width = window.innerWidth - 48; // px-6 = 24px * 2 = 48px
-      const targetWidth = Math.min(width, 1024); // max-w-5xl = 1024px
+      const width = window.innerWidth - 48;
+      const targetWidth = Math.min(width, 1024);
       const newScale = targetWidth / 832;
       setScale(newScale);
     };

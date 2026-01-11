@@ -23,6 +23,9 @@ const notoSans = Noto_Sans_KR({
 export const metadata: Metadata = {
   title: "EMOVA | Activación Neuro-Emocional",
   description: "Donde la tecnología termina, nosotros empezamos. Activación Neuro-Emocional exclusiva.",
+  icons: {
+    icon: "/assets/icono.svg",
+  },
 };
 
 export default function RootLayout({

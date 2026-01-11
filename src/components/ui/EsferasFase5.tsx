@@ -19,7 +19,7 @@ const EsferasFase5: React.FC<EsferasFase5Props> = ({
     [1, 2, 2],
     [2, 1, 2],
     [2, 2, 1],
-  ]; // 1=color1, 2=color2
+  ];
   const size = sphereRadius * 2 * 3 + gap * 2;
   return (
     <svg

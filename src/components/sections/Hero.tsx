@@ -10,7 +10,6 @@ const TypewriterText = ({ parts, delay = 0 }: { parts: { text: string; className
     Array.from(part.text).map((char) => ({ char, className: part.className }))
   );
 
-  // Agrupar letras en palabras para evitar saltos de línea a mitad de palabra
   const words: { char: string; className?: string; index: number }[][] = [];
   let currentWord: { char: string; className?: string; index: number }[] = [];
 
@@ -20,7 +19,7 @@ const TypewriterText = ({ parts, delay = 0 }: { parts: { text: string; className
         words.push(currentWord);
         currentWord = [];
       }
-      words.push([{ ...item, index }]); // El espacio o salto de línea es su propia "palabra"
+      words.push([{ ...item, index }]);
     } else {
       currentWord.push({ ...item, index });
     }
@@ -34,7 +33,6 @@ const TypewriterText = ({ parts, delay = 0 }: { parts: { text: string; className
       {words.map((word, wordIndex) => {
         const isSpaceOrNewline = word.length === 1 && (word[0].char === " " || word[0].char === "\n");
         
-        // Si es un salto de línea, renderizar un bloque de ancho completo
         if (word[0].char === "\n") {
           return (
             <motion.span
@@ -46,7 +44,6 @@ const TypewriterText = ({ parts, delay = 0 }: { parts: { text: string; className
           );
         }
 
-        // Si es espacio, renderizar normal
         if (isSpaceOrNewline) {
           return (
             <motion.span
@@ -61,7 +58,6 @@ const TypewriterText = ({ parts, delay = 0 }: { parts: { text: string; className
           );
         }
 
-        // Si es una palabra, envolver en whitespace-nowrap
         return (
           <span key={`word-${wordIndex}`} className="inline-block whitespace-nowrap">
             {word.map((item) => (

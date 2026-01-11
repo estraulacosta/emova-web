@@ -11,8 +11,8 @@ interface EsferaDobleProps {
 
 const EsferaDoble: React.FC<EsferaDobleProps> = ({
   size = 140,
-  color1 = "#5B4AE0", // Verde 1 (ajustar si tienes el color exacto)
-  color2 = "#05DBED", // Verde 2 (ajustar si tienes el color exacto)
+  color1 = "#5B4AE0",
+  color2 = "#05DBED",
   opacity1 = 0.85,
   opacity2 = 0.85,
   className = "",

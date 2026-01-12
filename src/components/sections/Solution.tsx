@@ -17,7 +17,7 @@ export default function Solution() {
              className="absolute top-0 left-0 right-0 z-30 flex justify-center pointer-events-none"
            >
               <img 
-                src="/assets/Personas_sentadas.png" 
+                src="/assets/Personas_Sentadas.png" 
                 alt="Personas sentadas" 
                 className="w-full max-w-none h-auto object-contain -translate-y-[62%]"
               />

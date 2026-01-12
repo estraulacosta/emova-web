@@ -81,7 +81,7 @@ export default function HeroNosotros() {
                 >
                   <img 
                     src="/assets/Persona_sentada.png" 
-                    alt="Persona sentada" 
+                    alt="Persona_sentada" 
                     className="w-full max-w-[200px] md:max-w-[280px] lg:max-w-[320px] h-auto object-contain grayscale"
                   />
                 </motion.div>

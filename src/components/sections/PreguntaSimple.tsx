@@ -83,7 +83,7 @@ export default function PreguntaSimple() {
         {/* Persona sentada centrada */}
         <div className="absolute left-1/2 bottom-4 z-20" style={{transform: 'translateX(-50%) translateY(-60px)'}}>
           <Image
-            src="/assets/Personas Sentadas.png"
+            src="/assets/Personas_Sentadas.png"
             alt="Persona Sentada"
             width={320}
             height={20}

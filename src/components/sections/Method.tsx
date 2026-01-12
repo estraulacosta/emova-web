@@ -90,7 +90,7 @@ export default function Method() {
         initial={{ x: '-100vw' }}
         animate={{ x: 0 }}
         transition={{ duration: 0.9, ease: 'easeOut', delay: 0.8 }}
-        className="absolute left-[-125px] sm:left-[-85px] md:left-[-250px] lg:left-[-160px] xl:left-[-170px] top-[-5px] sm:top-[-25px] md:top-[-40px] lg:top-[-20px] xl:top-[-30px] w-[220px] sm:w-[320px] md:w-[420px] lg:w-[465px] xl:w-[525px] pointer-events-none select-none"
+        className="absolute left-[20px] sm:left-[60px] md:left-[-105px] lg:left-[-15px] xl:left-[25px] top-[25px] sm:top-[-25px] md:top-[-40px] lg:top-[-20px] xl:top-[-30px] w-[220px] sm:w-[320px] md:w-[420px] lg:w-[465px] xl:w-[525px] pointer-events-none select-none"
         style={{ zIndex: 10 }}
       >
         <Image
@@ -98,7 +98,7 @@ export default function Method() {
           alt="Mano C"
           width={1000}
           height={1000}
-          style={{ transform: 'scaleX(-1) rotate(-18deg)' }}
+          style={{ transform: 'scaleX(-1) rotate(-18deg) scale(1.35)' }}
         />
       </motion.div>
       {/* Mano derecha: ajustada y rotada para que los dedos toquen el extremo inferior derecho del gráfico */}
@@ -106,7 +106,7 @@ export default function Method() {
         initial={{ x: '100vw' }}
         animate={{ x: 0 }}
         transition={{ duration: 0.9, ease: 'easeOut', delay: 0.8 }}
-        className="absolute right-[-185px] bottom-[-45px] sm:right-[-225px] sm:bottom-[-85px] md:right-[-350px] md:bottom-[-170px] lg:right-[-315px] lg:bottom-[-190px] xl:right-[-330px] xl:bottom-[-225px] w-[280px] sm:w-[380px] md:w-[550px] lg:w-[675px] xl:w-[788px] pointer-events-none select-none"
+        className="absolute right-[-185px] bottom-[-45px] xl:left-[1275px] sm:right-[-225px] sm:bottom-[-85px] md:right-[-350px] md:bottom-[-170px] lg:right-[-315px] lg:bottom-[-190px] xl:right-[-330px] xl:bottom-[-225px] w-[280px] sm:w-[380px] md:w-[550px] lg:w-[675px] xl:w-[788px] pointer-events-none select-none"
         style={{ zIndex: 30 }}
       >
         <Image
@@ -114,7 +114,7 @@ export default function Method() {
           alt="Mano dedos"
           width={1000}
           height={1000}
-          style={{ transform: 'rotate(15deg) scaleY(-1)' }}
+          style={{ transform: 'rotate(15deg) scaleY(-1) scale(1.35)' }}
         />
       </motion.div>
       {/* Asterisco decorativo */}

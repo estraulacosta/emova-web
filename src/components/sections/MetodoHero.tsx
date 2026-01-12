@@ -30,8 +30,8 @@ export default function MetodoHero() {
         </div>
       </div>
       {/* Manos decorativas posicionadas como la referencia */}
-      <Image src="/assets/Mano_C.png" alt="Mano C" width={320} height={320} className="absolute left-[-80px] top-[80px] md:left-[-120px] md:top-[120px] w-48 md:w-80 pointer-events-none select-none" style={{zIndex: 5}} />
-      <Image src="/assets/Mano_dedos.png" alt="Mano dedos" width={320} height={320} className="absolute right-[-80px] bottom-[-40px] md:right-[-120px] md:bottom-[-60px] w-48 md:w-80 pointer-events-none select-none" style={{zIndex: 5}} />
+      <Image src="/assets/Mano_C.png" alt="Mano C" width={320} height={320} className="absolute left-[-80px] top-[80px] md:left-[-120px] md:top-[120px] w-48 md:w-80 lg:w-36 pointer-events-none select-none" style={{zIndex: 5}} />
+      <Image src="/assets/Mano_dedos.png" alt="Mano dedos" width={320} height={320} className="absolute right-[-80px] bottom-[-40px] md:right-[-120px] md:bottom-[-60px] w-48 md:w-80 lg:w-36 pointer-events-none select-none" style={{zIndex: 5}} />
       {/* Asterisco decorativo */}
       <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg" className="absolute left-16 bottom-32 md:left-32 md:bottom-40 z-0">
         <text x="0" y="48" fontFamily="Playfair Display" fontSize="60" fill="#05DBED">*</text>

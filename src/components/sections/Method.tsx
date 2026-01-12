@@ -90,7 +90,7 @@ export default function Method() {
         initial={{ x: '-100vw' }}
         animate={{ x: 0 }}
         transition={{ duration: 0.9, ease: 'easeOut', delay: 0.8 }}
-        className="absolute left-[-125px] sm:left-[-85px] md:left-[-250px] lg:left-[-60px] xl:left-[-70px] top-[-5px] sm:top-[-25px] md:top-[-40px] lg:top-[-120px] xl:top-[-130px] w-[220px] sm:w-[320px] md:w-[420px] lg:w-[620px] xl:w-[700px] pointer-events-none select-none"
+        className="absolute left-[-125px] sm:left-[-85px] md:left-[-250px] lg:left-[-160px] xl:left-[-170px] top-[-5px] sm:top-[-25px] md:top-[-40px] lg:top-[-20px] xl:top-[-30px] w-[220px] sm:w-[320px] md:w-[420px] lg:w-[465px] xl:w-[525px] pointer-events-none select-none"
         style={{ zIndex: 10 }}
       >
         <Image
@@ -106,7 +106,7 @@ export default function Method() {
         initial={{ x: '100vw' }}
         animate={{ x: 0 }}
         transition={{ duration: 0.9, ease: 'easeOut', delay: 0.8 }}
-        className="absolute right-[-185px] bottom-[-45px] sm:right-[-225px] sm:bottom-[-85px] md:right-[-350px] md:bottom-[-170px] lg:right-[-270px] lg:bottom-[-300px] xl:right-[-285px] xl:bottom-[-335px] w-[280px] sm:w-[380px] md:w-[550px] lg:w-[900px] xl:w-[1050px] pointer-events-none select-none"
+        className="absolute right-[-185px] bottom-[-45px] sm:right-[-225px] sm:bottom-[-85px] md:right-[-350px] md:bottom-[-170px] lg:right-[-315px] lg:bottom-[-190px] xl:right-[-330px] xl:bottom-[-225px] w-[280px] sm:w-[380px] md:w-[550px] lg:w-[675px] xl:w-[788px] pointer-events-none select-none"
         style={{ zIndex: 30 }}
       >
         <Image
@@ -123,7 +123,7 @@ export default function Method() {
         viewBox="0 0 350 350"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
-        className="absolute left-[5px] bottom-[-90px] sm:left-[75px] sm:bottom-[-120px] md:left-[30px] md:bottom-[-135px] lg:left-[350px] lg:bottom-[-170px] xl:left-[370px] xl:bottom-[-180px] w-[130px] h-[130px] sm:w-[200px] sm:h-[200px] md:w-[240px] md:h-[240px] lg:w-[320px] lg:h-[320px] xl:w-[350px] xl:h-[350px] z-0"
+        className="absolute left-[5px] bottom-[-90px] sm:left-[75px] sm:bottom-[-120px] md:left-[30px] md:bottom-[-135px] lg:left-[210px] lg:bottom-[-170px] xl:left-[230px] xl:bottom-[-180px] w-[130px] h-[130px] sm:w-[200px] sm:h-[200px] md:w-[240px] md:h-[240px] lg:w-[320px] lg:h-[320px] xl:w-[350px] xl:h-[350px] z-0"
         initial={{ rotate: 0, opacity: 0 }}
         animate={{ rotate: 360, opacity: 1 }}
         transition={{ duration: 1.2, ease: "easeOut" }}

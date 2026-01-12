@@ -15,12 +15,12 @@ export default function PreguntaSimple() {
       </div>
 
       {/* Burbuja SVG y personas con texto dentro - Desktop */}
-      <div className="hidden lg:block relative w-full flex justify-center items-center" style={{height: 420, marginTop: '75px'}}>
-        <div style={{transform: 'rotate(180deg) translateX(560px) translateY(80px)'}} className="relative z-0">
+      <div className="hidden lg:block relative w-full " style={{height: 420, marginTop: '75px'}}>
+        <div style={{transform: 'rotate(180deg) translateY(80px)'}} className="relative z-0 flex justify-center items-center">
           <Image
             src="/assets/burbuja_final.svg"
             alt="Burbuja"
-            width={750}
+            width={700}
             height={750}
           />
         </div>
@@ -41,13 +41,14 @@ export default function PreguntaSimple() {
       </div>
 
       {/* Burbuja SVG y personas con texto dentro - Tablet */}
-      <div className="hidden md:block lg:hidden relative w-full flex justify-center items-center" style={{height: 350, marginTop: '20px'}}>
-        <div style={{transform: 'rotate(180deg) translateX(180px) translateY(10px)'}} className="z-10">
+      <div className="hidden md:block lg:hidden relative w-full" style={{height: 350, marginTop: '20px'}}>
+        <div style={{transform: 'rotate(180deg) translateY(10px)'}} className="z-10">
           <Image
             src="/assets/burbuja_final.svg"
             alt="Burbuja"
             width={450}
             height={300}
+            className="relative flex justify-center items-center align-middle"
           />
         </div>
         {/* Texto dentro de la burbuja */}
@@ -55,7 +56,7 @@ export default function PreguntaSimple() {
           <h3 className="text-emova-tertiary text-[1.5rem] font-extrabold font-playfair mb-3 text-center leading-tight break-words" style={{paddingLeft: '5px', paddingRight: '5px', wordBreak: 'break-word'}}>¿Cuánto te está costando<br /><span className="text-black font-extrabold">NO saber qué está roto en tu infraestructura humana?</span></h3>
         </div>
         {/* Persona sentada centrada */}
-        <div className="relative left-1/2 bottom-6 z-20" style={{transform: 'translateX(-230px) translateY(-138px)'}}>
+        <div className="relative left-1/2 bottom-6 z-20" style={{transform: 'translateY(-138px)'}}>
           <Image
             src="/assets/Personas_Sentadas.png"
             alt="Persona Sentada"

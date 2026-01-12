@@ -125,8 +125,8 @@ export default function DecorativeRules() {
             </motion.p>
           </div>
 
-          {/* Versión Desktop con SVG - Solo visible en lg+ */}
-          <div className="hidden lg:block relative mx-auto top-0 md:top-0 lg:top-[-200px]" style={{ maxWidth: '1440px', minHeight: '1850px' }}>
+          {/* Versión Desktop con SVG - Solo visible en xl+ */}
+          <div className="hidden xl:block relative mx-auto top-0 md:top-0 xl:top-[-200px]" style={{ maxWidth: '1440px', minHeight: '1850px' }}>
             <svg className="absolute inset-0 w-full h-full" style={{ pointerEvents: 'none' }}>
               {/* Línea horizontal desde círculos izquierda hasta media luna */}
               <motion.line
@@ -361,9 +361,9 @@ export default function DecorativeRules() {
             </motion.p>
           </div>
 
-          {/* Versión Tablet y Móvil - Grid responsive */}
-          <div className="lg:hidden">
-            <div className="grid-sistema gap-8 md:gap-12">
+          {/* Versión Tablet, Móvil y resoluciones 1280x720/1360x768 - Grid responsive */}
+          <div className="xl:hidden">
+            <div className="grid-sistema gap-8 md:gap-12 lg:my-45">
               
               {/* Sección 1: Mapa de desconexiones críticas */}
               <motion.div
@@ -591,8 +591,8 @@ export default function DecorativeRules() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8, delay: 0.4 }}
-            className="absolute z-10"
-            style={{ right: '100px', top: '-200px' }}
+            className="absolute z-10 lg:scale-[0.8] xl:scale-100"
+            style={{ right: '50px', top: '-200px', transformOrigin: 'center center' }}
           >
             <a
               href="/contacto"

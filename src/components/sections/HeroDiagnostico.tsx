@@ -173,8 +173,8 @@ export default function HeroDiagnostico() {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.8, delay: 0.3 }}
-              className="hidden lg:block absolute w-[450px] xl:w-[550px] z-40"
-              style={{ top: '-200px', right: '-450px' }}
+              className="hidden lg:block absolute w-[450px] top-0 xl:w-[550px] z-40 lg:right-[-35px] lg:top-10 xl:right-[-450px] xl:top-0"
+              
             >
               <img 
                 src="/assets/Dinero.png" 
@@ -189,8 +189,8 @@ export default function HeroDiagnostico() {
               whileInView={{ opacity: 1, scale: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.8, ease: "easeOut" }}
-              className="hidden lg:block absolute w-[280px] xl:w-[350px] z-20"
-              style={{ right: '-170px', bottom: '-10px' }}
+              className="hidden lg:block absolute w-[280px] xl:w-[350px] z-20 lg:right-[-10px] xl:right-[-170px]"
+              style={{ bottom: '-10px' }}
             >
               <svg 
                 width="446" 

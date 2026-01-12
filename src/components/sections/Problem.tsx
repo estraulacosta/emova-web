@@ -75,7 +75,7 @@ export default function Problem() {
                   transition={{ duration: 0.8, delay: 0.5 + (index * 0.2) }}
                 >
                   <Image
-                    src="/assets/Icono Estrella.svg"
+                    src="/assets/Icono_Estrella.svg"
                     alt="Icono"
                     width={24}
                     height={24}
@@ -137,7 +137,7 @@ export default function Problem() {
                 }}
               >
                 <Image
-                  src="/assets/señor pixelado.svg"
+                  src="/assets/senor_pixelado.svg"
                   alt="Señor pixelado"
                   width={600}
                   height={600}

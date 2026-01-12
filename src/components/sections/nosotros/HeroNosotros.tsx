@@ -80,7 +80,7 @@ export default function HeroNosotros() {
                   className="relative z-10"
                 >
                   <img 
-                    src="/assets/Persona sentada.png" 
+                    src="/assets/Persona_sentada.png" 
                     alt="Persona sentada" 
                     className="w-full max-w-[200px] md:max-w-[280px] lg:max-w-[320px] h-auto object-contain grayscale"
                   />
@@ -115,8 +115,7 @@ export default function HeroNosotros() {
                 despersonalizada.
               </p>
               <p className="text-emova-grey/80 font-libre text-sm md:text-base lg:text-lg leading-relaxed">
-                Meter foto de mujer y luego va Cecilia meta foto suya 
-                como fundadora de Alto Grado, descubrí esta crisis durante 
+                Como fundadora de Emova®, descubrí esta crisis durante 
                 mi trayectoria en educación física en corporativo. Observé 
                 cómo equipos técnicamente brillantes se fragmentaban por 
                 falta de conexión humana real.
@@ -231,7 +230,7 @@ export default function HeroNosotros() {
               className="flex justify-center order-2 md:order-2 lg:order-2 relative -mb-12 md:mb-0 lg:-mb-20"
             >
               <img 
-                src="/assets/señora sentada.png" 
+                src="/assets/senora_sentada.png" 
                 alt="Nuestra Misión" 
                 className="w-full max-w-[300px] md:max-w-[400px] lg:max-w-[500px] h-auto object-contain"
               />
@@ -260,7 +259,7 @@ export default function HeroNosotros() {
                 
                 {/* Imagen del cerebro */}
                 <img 
-                  src="/assets/cerebro perfil.png" 
+                  src="/assets/cerebro_perfil.png" 
                   alt="Cerebro" 
                   className="relative z-10 w-[200px] md:w-[260px] lg:w-[320px] h-auto object-contain"
                 />

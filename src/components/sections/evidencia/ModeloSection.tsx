@@ -36,7 +36,7 @@ export default function ModeloSection() {
               {/* Green Circle */}
               <div className="w-48 h-48 md:w-56 md:h-56 lg:w-64 lg:h-64 rounded-full bg-emova-tertiary flex items-center justify-center shadow-lg">
                 <img
-                  src="/assets/cerebro-arriba.png"
+                  src="/assets/cerebro_arriba.png"
                   alt="Cerebro"
                   className="relative w-32 h-32 md:w-40 md:h-40 lg:w-55 lg:h-55 object-contain bottom-0 right-0 md:-bottom-2 md:-right-2 lg:-bottom-10 lg:-right-4"
                 />
@@ -60,7 +60,7 @@ export default function ModeloSection() {
                   transition={{ duration: 0.8, delay: 0.5 }}
                 >
                   <Image
-                    src="/assets/Icono Estrella.svg"
+                    src="/assets/Icono_Estrella.svg"
                     alt="Icono"
                     width={24}
                     height={24}
@@ -92,7 +92,7 @@ export default function ModeloSection() {
                   transition={{ duration: 0.8, delay: 0.7 }}
                 >
                   <Image
-                    src="/assets/Icono Estrella.svg"
+                    src="/assets/Icono_Estrella.svg"
                     alt="Icono"
                     width={24}
                     height={24}
@@ -199,7 +199,7 @@ export default function ModeloSection() {
                   transition={{ duration: 0.8, delay: 0.9 }}
                 >
                   <Image
-                    src="/assets/Icono Estrella.svg"
+                    src="/assets/Icono_Estrella.svg"
                     alt="Icono"
                     width={24}
                     height={24}

@@ -94,7 +94,7 @@ export default function Method() {
         style={{ zIndex: 10 }}
       >
         <Image
-          src="/assets/Mano%20C.png"
+          src="/assets/Mano_C.png"
           alt="Mano C"
           width={1000}
           height={1000}
@@ -110,7 +110,7 @@ export default function Method() {
         style={{ zIndex: 30 }}
       >
         <Image
-          src="/assets/Mano%20dedos.png"
+          src="/assets/Mano_dedos.png"
           alt="Mano dedos"
           width={1000}
           height={1000}

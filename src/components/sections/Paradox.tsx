@@ -36,7 +36,7 @@ export default function Paradox() {
               {/* Imagen de la señora - adelante */}
               <div className="relative z-20">
                 <img
-                  src="/assets/Se%C3%B1ora.png"
+                  src="/assets/Senora.png"
                   alt="Señora arrastrando círculo"
                   className="w-20 h-auto sm:w-28 md:w-32 lg:w-36 object-contain drop-shadow-2xl"
                 />

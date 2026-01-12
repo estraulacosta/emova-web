@@ -31,7 +31,7 @@ export default function PreguntaSimple() {
         {/* Persona sentada centrada */}
         <div className="absolute left-1/2 bottom-8 z-20" style={{transform: 'translateX(-50%)'}}>
           <Image
-            src="/assets/Personas Sentadas.png"
+            src="/assets/Personas_Sentadas.png"
             alt="Persona Sentada"
             width={750}
             height={750}
@@ -57,7 +57,7 @@ export default function PreguntaSimple() {
         {/* Persona sentada centrada */}
         <div className="relative left-1/2 bottom-6 z-20" style={{transform: 'translateX(-230px) translateY(-138px)'}}>
           <Image
-            src="/assets/Personas Sentadas.png"
+            src="/assets/Personas_Sentadas.png"
             alt="Persona Sentada"
             width={450}
             height={450}

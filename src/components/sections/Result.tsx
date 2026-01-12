@@ -64,7 +64,7 @@ export default function Result() {
                 className="relative z-10"
             >
                 <img 
-                    src="/assets/SeñoresMano.png" 
+                    src="/assets/SenoresMano.png" 
                     alt="Colaboración" 
                     className="w-full max-w-xl mx-auto object-contain"
                 />

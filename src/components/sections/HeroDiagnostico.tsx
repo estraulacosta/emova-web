@@ -294,7 +294,7 @@ export default function HeroDiagnostico() {
               style={{ left: '-40px', top: '-140px' }}
             >
               <img 
-                src="/assets/Mano dedos1.png" 
+                src="/assets/Mano_dedos1.png" 
                 alt="Mano señalando" 
                 className="w-full h-auto"
               />

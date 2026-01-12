@@ -111,7 +111,7 @@ export default function HeroEvidencia() {
               className="bg-white p-6 md:p-8 rounded-lg"
             >
               <div className="mb-4 h-12 flex items-center">
-                <img src="/assets/daniel golleman.png" alt="Daniel Goleman" className="h-10 object-contain" />
+                <img src="/assets/daniel_golleman.png" alt="Daniel Goleman" className="h-10 object-contain" />
               </div>
               <h3 className="text-xl md:text-2xl font-bold text-emova-grey mb-4">
                 Liderazgo emocional = resultados medibles

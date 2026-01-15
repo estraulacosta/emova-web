@@ -125,8 +125,8 @@ export default function DecorativeRules() {
             </motion.p>
           </div>
 
-          {/* Versión Desktop con SVG - Solo visible en xl+ */}
-          <div className="hidden xl:block relative mx-auto top-0 md:top-0 xl:top-[-200px]" style={{ maxWidth: '1440px', minHeight: '1850px' }}>
+          {/* Versión Desktop con SVG - Solo visible en 2xl+ (1536px+) */}
+          <div className="hidden 2xl:block relative mx-auto top-0 md:top-0 2xl:top-[-200px]" style={{ maxWidth: '1440px', minHeight: '1850px' }}>
             <svg className="absolute inset-0 w-full h-full" style={{ pointerEvents: 'none' }}>
               {/* Línea horizontal desde círculos izquierda hasta media luna */}
               <motion.line
@@ -362,8 +362,8 @@ export default function DecorativeRules() {
           </div>
 
           {/* Versión Tablet, Móvil y resoluciones 1280x720/1360x768 - Grid responsive */}
-          <div className="xl:hidden">
-            <div className="grid-sistema gap-8 md:gap-12 lg:my-45">
+          <div className="2xl:hidden container mx-auto px-4 md:px-6 lg:px-12">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 lg:my-45 max-w-6xl mx-auto">
               
               {/* Sección 1: Mapa de desconexiones críticas */}
               <motion.div
@@ -371,7 +371,7 @@ export default function DecorativeRules() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: 0.2 }}
-                className="col-span-m-3 col-span-t-5 bg-white rounded-3xl p-6 md:p-8"
+                className="bg-white rounded-3xl p-6 md:p-8"
               >
                 <div className="flex justify-center mb-6">
                   <div className="relative">
@@ -414,7 +414,7 @@ export default function DecorativeRules() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: 0.3 }}
-                className="col-span-m-3 col-span-t-5 bg-white rounded-3xl p-6 md:p-8"
+                className="bg-white rounded-3xl p-6 md:p-8"
               >
                 <div className="flex justify-center mb-6">
                   <div className="relative">
@@ -450,7 +450,7 @@ export default function DecorativeRules() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: 0.4 }}
-                className="col-span-m-3 col-span-t-5 bg-white rounded-3xl p-6 md:p-8"
+                className="bg-white rounded-3xl p-6 md:p-8"
               >
                 <div className="flex justify-center mb-6">
                   <div className="relative flex items-center justify-center">
@@ -497,7 +497,7 @@ export default function DecorativeRules() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: 0.5 }}
-                className="col-span-m-3 col-span-t-5 bg-white rounded-3xl p-6 md:p-8"
+                className="bg-white rounded-3xl p-6 md:p-8"
               >
                 <div className="flex justify-center mb-6">
                   <div className="relative">
@@ -528,7 +528,7 @@ export default function DecorativeRules() {
                 </p>
               </motion.div>
 
-              <motion.div className="col-span-m-3 col-span-t-5 rounded-3xl p-6 md:p-8">
+              <motion.div className="md:col-span-2 rounded-3xl p-6 md:p-8">
                 <motion.p
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
@@ -1104,7 +1104,7 @@ export default function DecorativeRules() {
                 <img 
                   src="/assets/like.png" 
                   alt="Like" 
-                  className="relative w-80 h-80 top-12 left-[-90] object-contain opacity-100"
+                  className="relative w-80 h-80 top-12 left-[-20%] object-contain opacity-100 w-[82%] h-[82%]"
                 />
               </motion.div>
 

@@ -38,7 +38,7 @@ export default function ModeloSection() {
                 <img
                   src="/assets/cerebro_arriba.png"
                   alt="Cerebro"
-                  className="relative w-32 h-32 md:w-40 md:h-40 lg:w-55 lg:h-55 object-contain bottom-0 right-0 md:-bottom-2 md:-right-2 lg:-bottom-10 lg:-right-4"
+                  className="relative w-32 h-32 md:w-40 md:h-40 lg:w-55 lg:h-55 object-contain bottom-0 right-0 md:-bottom-2 md:-right-2 lg:-bottom-0 lg:-right-0"
                 />
               </div>
             </motion.div>

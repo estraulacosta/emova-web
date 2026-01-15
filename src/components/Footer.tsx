@@ -39,10 +39,10 @@ export default function Footer() {
             <div className="footer-section min-w-[140px]">
               <h4 className="font-playfair font-bold mb-2 text-lg">Soporte</h4>
               <ul className="space-y-1 text-white/90">
-                <li><a href="#" className="hover:underline">Ayuda</a></li>
-                <li><a href="#" className="hover:underline">Condiciones</a></li>
-                <li><a href="#" className="hover:underline">Privacidad</a></li>
-                <li><a href="#" className="hover:underline">Políticas</a></li>
+                <li><Link href="/contacto" className="hover:underline">Ayuda</Link></li>
+                <li><Link href="/contacto" className="hover:underline">Condiciones</Link></li>
+                <li><Link href="/contacto" className="hover:underline">Privacidad</Link></li>
+                <li><Link href="/contacto" className="hover:underline">Políticas</Link></li>
               </ul>
             </div>
             {/* Servicios */}

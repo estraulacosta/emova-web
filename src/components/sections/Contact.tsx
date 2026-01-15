@@ -1,10 +1,24 @@
 "use client";
 
+
+import { useRef } from "react";
 import { motion } from "framer-motion";
 import { Mail, Phone, Instagram, Facebook, Linkedin } from "lucide-react";
 import Link from "next/link";
 
 export default function Contact() {
+  const formRef = useRef<HTMLFormElement>(null);
+
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    // Aquí podrías agregar la lógica para enviar el formulario (API, etc.)
+    window.alert("¡Mensaje enviado!");
+    if (formRef.current) {
+      formRef.current.reset();
+    }
+    window.location.href = "/";
+  };
+
   return (
     <footer className="bg-emova-grey text-white pt-24 pb-12">
       <div className="container mx-auto px-6 max-w-6xl">
@@ -45,6 +59,8 @@ export default function Contact() {
           </motion.div>
 
           <motion.form
+            ref={formRef}
+            onSubmit={handleSubmit}
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -63,7 +79,7 @@ export default function Contact() {
               <label htmlFor="contact-message" className="block text-sm font-medium mb-2 opacity-80">Mensaje</label>
               <textarea id="contact-message" name="message" rows={4} className="w-full bg-white/10 border border-white/20 rounded-lg px-4 py-3 focus:outline-none focus:border-emova-primary transition-colors" placeholder="¿Cómo podemos ayudarte?" />
             </div>
-            <button className="w-full bg-emova-primary hover:bg-emova-secondary text-white font-bold py-4 rounded-lg transition-colors">
+            <button type="submit" className="w-full bg-emova-primary hover:bg-emova-secondary text-white font-bold py-4 rounded-lg transition-colors">
               Enviar Mensaje
             </button>
           </motion.form>

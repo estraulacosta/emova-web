@@ -2,12 +2,42 @@
 
 import { motion } from "framer-motion";
 import { Mail, Phone, MapPin, ChevronUp } from "lucide-react";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
 export default function ContactoPage() {
   const [showScrollTop, setShowScrollTop] = useState(false);
+  const [showModal, setShowModal] = useState(false);
+  const formRef = useRef<HTMLFormElement>(null);
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    const form = formRef.current;
+    if (!form) return;
+    const formData = new FormData(form);
+    try {
+      const res = await fetch("https://formspree.io/f/mjggbwya", {
+        method: "POST",
+        body: formData,
+        headers: {
+          Accept: "application/json",
+        },
+      });
+      if (res.ok) {
+        form.reset();
+        setShowModal(true);
+        setTimeout(() => {
+          setShowModal(false);
+          window.location.href = "/";
+        }, 1800);
+      } else {
+        alert("Hubo un error al enviar el mensaje. Intenta nuevamente.");
+      }
+    } catch {
+      alert("Hubo un error al enviar el mensaje. Intenta nuevamente.");
+    }
+  };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -167,10 +197,29 @@ export default function ContactoPage() {
             className="max-w-2xl mx-auto"
           >
               <form 
-                action="https://formspree.io/f/mjggbwya" 
-                method="POST"
+                ref={formRef}
+                onSubmit={handleSubmit}
                 className="space-y-6"
               >
+                      {/* Modal personalizado de éxito */}
+                      {showModal && (
+                        <div className="absolute left-1/2 top-1/2 z-50" style={{transform: 'translate(-50%, -50%)'}}>
+                          <div className="bg-[#B9C85E] rounded-2xl shadow-lg px-8 py-10 flex flex-col items-center animate-fade-in" style={{ minWidth: 320 }}>
+                            <span className="text-white text-4xl mb-2 font-bold">¡Mensaje enviado!</span>
+                            <span className="text-white text-lg font-libre mb-2">Gracias por contactarnos</span>
+                            <span className="text-white text-sm opacity-80">Serás redirigido al inicio...</span>
+                          </div>
+                          <style>{`
+                            @keyframes fade-in {
+                              from { opacity: 0; transform: scale(0.95); }
+                              to { opacity: 1; transform: scale(1); }
+                            }
+                            .animate-fade-in {
+                              animation: fade-in 0.5s ease;
+                            }
+                          `}</style>
+                        </div>
+                      )}
                 <div>
                   <label htmlFor="name" className="block text-sm sm:text-2xl md:text-sm font-semibold text-[#575756] mb-2 sm:mb-3 md:mb-2 font-noto">
                     Nombre
@@ -212,9 +261,6 @@ export default function ContactoPage() {
                     placeholder=""
                   />
                 </div>
-
-                <input type="hidden" name="_subject" value="Nuevo mensaje desde Emova Web" />
-                <input type="hidden" name="_next" value="/contacto?success=true" />
 
                 <div className="flex justify-start">
                   <button
